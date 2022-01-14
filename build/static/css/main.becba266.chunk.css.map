@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.css"],"names":[],"mappings":"AACA,WACE,iBAAkB,CAClB,8CACF,CAGA,EACE,qBAAsB,CACtB,QAAS,CACT,SAAU,CACV,iBAEF","file":"main.becba266.chunk.css","sourcesContent":["\n@font-face {\n  font-family: fofbb;\n  src: url(\"./fonts/fofbb_ital.otf\");\n}\n\n\n* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n  font-family: fofbb;\n\n}"]}
