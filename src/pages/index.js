@@ -17,7 +17,7 @@ const Home = () => {
     var [mintList, setMintList] = useState([]);
     var [reservedList, setReservedList] = useState([]);
     const web3 = new Web3(window.ethereum);
-    const tokenAddress = "0x58BB428810083D2b1dce465875E8925CA413BffC";
+    const tokenAddress = "0x2ff8133F0aE845Ab4653102af4d61D40120F508c";
 
     const initializeWallet = async () =>{
       if(typeof window.ethereum !== 'undefined'){

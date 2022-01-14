@@ -61,30 +61,6 @@ const HeroSection = ({token, totalSupply, account, mintList, reservedList}) => {
     const classes = useStyles();
     const labelClasses = useLabelStyles();
 
-    // const generateUniqueId = () =>{
-    //     var randNumber = Math.floor((Math.random() * 6000) + 1);
-    //     var isTrue = mintList.includes(randNumber);
-    //     //console.log(mintList);
-    //     var isIncluded = reservedList.includes(randNumber);
-    //     //console.log(reservedList);
-
-    //     if(isTrue === false && isIncluded === false){
-    //         //console.log("not included");
-    //         return randNumber;
-    //     }
-    //     else{
-    //         while(isTrue === true || isIncluded === true){
-    //             randNumber = Math.floor((Math.random() * 6000) + 1);
-    //             isTrue = mintList.includes(randNumber);
-    //             isIncluded = reservedList.includes(randNumber);
-    //             if(isTrue === false && isIncluded === false){
-    //                 //console.log("./.");
-    //                 return randNumber;
-    //             }
-    //         }
-    //     }
-    // }
-
     const buyNft = async () =>{
         if(typeof window.ethereum !== 'undefined'){
             const qty = document.getElementById('nftQty').value;
