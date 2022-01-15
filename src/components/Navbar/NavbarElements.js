@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Link as LinkR} from 'react-router-dom';
 import { Link as LinkS} from 'react-scroll';
-import pirulen from '../../fonts/batman.ttf'
+import pirulen from '../../fonts/RoadRage.otf'
 import gidole from '../../fonts/Gidole.otf'
 
 
@@ -215,7 +215,7 @@ export const NavBtn = styled.button`
     white-space: nowrap;
     padding: 10px 22px;
     color: white;
-    font-size: 16px;
+    font-size: 13px;
     outline: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;

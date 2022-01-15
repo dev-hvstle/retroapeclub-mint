@@ -3,6 +3,7 @@ import fofbb from '../../fonts/fofbb_ital.otf';
 import cyber from '../../fonts/batman.ttf';
 import para from '../../fonts/para.otf'
 import gidole from '../../fonts/Gidole.otf'
+import rr from '../../fonts/roadrage.otf';
 
 export const HeroContainer = styled.div`
 
@@ -20,6 +21,11 @@ export const HeroContainer = styled.div`
     @font-face {
         font-family: cyber;
         src: url(${cyber});
+    }
+
+    @font-face {
+        font-family: rr;
+        src: url(${rr});
     }
 
      
@@ -354,9 +360,9 @@ export const InfoH1 = styled.h1`
     color: #fff;
     font-size: 5vh;
     text-align: left;
-    font-family: cyber;
-    letter-spacing: .3vh;
-    line-height: 5vh;
+    font-family: rr;
+    letter-spacing: 1.2vh;
+    line-height: 7vh;
     padding-bottom:1.5vh;
     padding: 5vh;
     font-size: 5vh;

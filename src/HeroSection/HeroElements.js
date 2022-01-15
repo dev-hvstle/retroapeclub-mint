@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import fofbb from './../fonts/fofbb_ital.otf';
-import cyber from './../fonts/batman.ttf';
+import rr from './../fonts/roadrage.otf';
 import para from './../fonts/para.otf'
 
 export const HeroContainer = styled.div`
@@ -17,8 +17,8 @@ export const HeroContainer = styled.div`
 
     
     @font-face {
-        font-family: cyber;
-        src: url(${cyber});
+        font-family: rr;
+        src: url(${rr});
     }
 
      
@@ -177,8 +177,8 @@ export const HeroH1 = styled.h1`
     color: #fff;
     font-size: 5vh;
     text-align: left;
-    font-family: cyber;
-    letter-spacing: .3vh;
+    font-family: rr;
+    letter-spacing: 1.1vh;
     line-height: 5vh;
     padding-bottom:1.5vh;
 
