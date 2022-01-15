@@ -5,6 +5,7 @@ import './NavbarElements.css';
 import opensea from '../../Image/opensea.png'
 import twitter from '../../Image/twitter.png'
 import discord from '../../Image/discord.png'
+import fb from '../../Image/fb.png'
 import Logo from '../../Image/retro.png';
 
 import {
@@ -70,6 +71,12 @@ const Navbar = ({ toggle,initializeWallet, isInitialized, account }) => {
                         <ImgWrap>
                         
                             <ImgLogo src={discord} to="/"></ImgLogo>
+                            
+                        </ImgWrap>
+
+                        <ImgWrap>
+                        
+                            <ImgLogo src={fb} to="/"></ImgLogo>
                             
                         </ImgWrap>
                         

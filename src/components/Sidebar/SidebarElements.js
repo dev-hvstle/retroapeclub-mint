@@ -2,13 +2,14 @@ import styled from 'styled-components';
 import {Link as LinkS} from 'react-scroll';
 import {Link as LinkR} from 'react-router-dom';
 import { FaTimes } from 'react-icons/fa';
+import gidole from '../../fonts/Gidole.otf'
 
 export const SidebarContainer = styled.aside`
     position: fixed;
     z-index: 999;
     width: 100%;
     height: 100%;
-    background: #000; 
+    background: #0f1923; 
     display: grid;
     align-items: center;
     top: 0;
@@ -16,6 +17,11 @@ export const SidebarContainer = styled.aside`
     transition: 0.3s ease-in-out;
     opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
     top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};  
+
+    @font-face {
+        font-family: gidole;
+        src: url({gidole});
+    }
 
 `
 
@@ -59,7 +65,9 @@ export const SidebarLink = styled(LinkS)`
     text-decoration: none;
     list-style: none;
     transition: 0.2s ease-in-out;
+    font-family: gidole;
     text-decoration: none;
+    padding-top: 15vh;
     color: #fff;
     cursor: pointer;
     
@@ -82,7 +90,7 @@ border-radius: 2px;
 border:2px solid #0b6591;
 background: #1c1131;
 white-space: nowrap;
-padding: 10px 22px;
+padding: 0px 0px;
 color: white;
 font-size: 16px;
 outline: none;
@@ -98,5 +106,46 @@ text-decoration: none;
     color: white;
     
 }
+
+`
+
+
+export const ImgLogo = styled.img`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: auto;
+    margin-right: 1vw;
+
+    @media screen and (max-width:1024){
+        height: 60%;
+        
+        width: auto;
+    }
+
+    @media screen and (max-width: 460px){
+        margin-right: 4vw !important;
+        height: 30%;
+        width: auto;
+    }
+`;
+
+
+export const ImgWrap = styled.image`
+
+    
+    width: auto;
+    height: 20vh;
+    cursor: pointer;
+
+   
+`
+
+export const SidebarSocials = styled.div`
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 `

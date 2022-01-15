@@ -110,8 +110,8 @@ const HeroSection = ({token, totalSupply, account, mintList, reservedList}) => {
                             
                                 <TextField type="number" id='nftQty' InputProps={{classes: classes}} InputLabelProps={{classes: labelClasses}} label="Mint Quantity" fullWidth></TextField>
                                 
-                                <ButtonWrap>
-                                    <button className="btnMint" onClick={buyNft}>Get Your Ape!</button>
+                                <ButtonWrap src="">
+                                    <button className="btnMint" onClick={buyNft}>MINT</button>
                                 </ButtonWrap>
 
                             </HeroImgWrapper>

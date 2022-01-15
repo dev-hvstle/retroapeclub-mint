@@ -1,9 +1,24 @@
 import React from 'react'
-import {SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SideBtnWrap, SidebarRoute} from './SidebarElements';
+import {SidebarContainer, Icon, CloseIcon, 
+    SidebarWrapper, SidebarMenu, SidebarLink, 
+    SideBtnWrap, 
+    SidebarRoute,
+    ImgWrap,
+    SidebarSocials,
+    ImgLogo
+} from './SidebarElements';
+import opensea from '../../Image/opensea.png'
+import twitter from '../../Image/twitter.png'
+import discord from '../../Image/discord.png'
+import fb from '../../Image/fb.png'
+import Logo from '../../Image/retro.png';
 
 
+export const Sidebar = ({isOpen, toggle, account, initializeWallet, isInitialized}) => {
 
-export const Sidebar = ({isOpen, toggle}) => {
+    const patt = /^[a-zA-Z0-9]{10}/;
+    const sanitizedAddress = account.match(patt);
+
     return (
         <SidebarContainer isOpen={isOpen} onClick={toggle}>
             <Icon onClick={toggle}>
@@ -14,14 +29,52 @@ export const Sidebar = ({isOpen, toggle}) => {
                 
                 <SidebarMenu>
                     <SidebarLink>ABOUT</SidebarLink>
-                    <SidebarLink>ABOUT</SidebarLink>
-                    <SidebarLink>ABOUT</SidebarLink>
+                    <SidebarLink>ROADMAP</SidebarLink>
+                    <SidebarLink>TEAMS</SidebarLink>
                 </SidebarMenu>
+
+                    <SidebarSocials>
+
+                    <ImgWrap>
+                        
+                        <ImgLogo src={opensea} to="/"></ImgLogo>
+
+                    </ImgWrap>
+
+                    <ImgWrap>
+                    
+                        <ImgLogo src={twitter} to="/"></ImgLogo>
+                        
+                    </ImgWrap>
+
+                    <ImgWrap>
+                    
+                        <ImgLogo src={discord} to="/"></ImgLogo>
+                        
+                    </ImgWrap>
+
+                    <ImgWrap>
+                    
+                        <ImgLogo src={fb} to="/"></ImgLogo>
+                        
+                    </ImgWrap>
+
+                    </SidebarSocials>
+                   
+               
+
+
                 <SideBtnWrap>
-                    <SidebarRoute to='/Connect Wallet'>
-                        Connect Wallet
-                    </SidebarRoute>
+                    
+
+                <button className="btnMint" onClick={initializeWallet}>
+                    {(isInitialized ? sanitizedAddress : account)}</button>
+
                 </SideBtnWrap>
+
+          
+                
+
             </SidebarWrapper>
 
         </SidebarContainer>

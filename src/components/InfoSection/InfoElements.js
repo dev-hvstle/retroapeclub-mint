@@ -193,7 +193,7 @@ export const HeroContent = styled.div`
     }
 
     @media screen and (max-width:768px){
-        top:15vh;
+        top:10vh;
         padding-top: 1vh;
         padding-bottom: 5vh;
         padding-left: 2vh;

@@ -25,7 +25,7 @@ export const HeroContainer = styled.div`
 
     @media screen and (max-width: 768px){
         position: relative;
-        top:140vh;
+        top:150vh;
         
         
     }
@@ -250,6 +250,8 @@ export const HeroImgWrapper = styled.div`
     
 `;
 
+
+
 export const HeroImg = styled.img`
     width: 100%;
     border-radius: 20px;
@@ -322,6 +324,7 @@ export const ButtonWrap = styled.div`
     
 `
 
+
 export const ImgLogo = styled.img`
    
     height: 8vh;
@@ -330,5 +333,7 @@ export const ImgLogo = styled.img`
 
   
 `;
+
+
 
 
