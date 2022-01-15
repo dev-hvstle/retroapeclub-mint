@@ -144,6 +144,10 @@ export const Column1 = styled.div`
     padding-top:0vh;
     grid-area: col1;
     
+    @media screen and (max-width:768px){
+        padding: 5vh;
+        padding-bottom: 0vh;
+    }
     
 `;
 
@@ -155,6 +159,8 @@ export const Column2 = styled.div`
     @media screen and (max-width:1024px){
         padding-top:10vh;
     }
+
+    
 
     @media screen and (max-width:468px){
         padding-top:0vh;
@@ -173,6 +179,8 @@ export const HeroContent = styled.div`
     padding-left: 0vh;
     padding-right: 5vh;
     display: flex;
+    -o-object-fit: cover;
+    object-fit: cover;
     align-items: center;
     justify-content: center;
 
@@ -185,7 +193,7 @@ export const HeroContent = styled.div`
     }
 
     @media screen and (max-width:768px){
-        top:10vh;
+        top:15vh;
         padding-top: 1vh;
         padding-bottom: 5vh;
         padding-left: 2vh;
