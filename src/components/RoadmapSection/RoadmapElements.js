@@ -6,7 +6,6 @@ import para from '../../fonts/para.otf'
 export const HeroContainer = styled.div`
 
 
-    clip-path: polygon(0 0, 10% 0, 20% 8%, 80% 8%, 89% 0, 100% 0, 100% 100%, 85% 100%, 74% 100%, 30% 100%, 18% 100%, 0 100%);
     background: #0c0c0c;
     display: flex;
     justify-content: center;
@@ -17,10 +16,11 @@ export const HeroContainer = styled.div`
     z-index: 1;
     align-items: center;
 
+    
+
     @media screen and (max-width: 1200px){
         position: relative;
-        top:0vh;
-        
+        top:110vh;
         
     }
 
@@ -325,7 +325,7 @@ export const ButtonWrap = styled.div`
 
 export const ImgLogo = styled.img`
    
-    height: 7vh;
+    height: 8vh;
     width: auto;
     padding: 0vh;
 
