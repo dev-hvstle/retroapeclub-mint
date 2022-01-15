@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-
 import rr from '../../fonts/roadrage.otf';
 import para from '../../fonts/para.otf'
 
@@ -63,7 +62,7 @@ export const HeroBg = styled.div`
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 130vh;
+    height: 100vh;
     overflow: hidden;
     
 
@@ -141,7 +140,7 @@ export const HeroContent = styled.div`
     z-index: 3;
     max-width: 1200px;
     position: absolute;
-    top:20vh;
+    top:0vh;
     padding-top: 10;
     padding-bottom: 5vh;
     padding-left: 0vh;
