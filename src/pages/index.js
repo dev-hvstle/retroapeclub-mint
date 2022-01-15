@@ -92,6 +92,7 @@ const Home = () => {
           <Navbar toggle={toggle} initializeWallet={initializeWallet} isInitialized={isInitialized} account={account}/>
           <HeroSection token={token} account={account}/>
           <InfoSection />
+    
           
         </>
     )

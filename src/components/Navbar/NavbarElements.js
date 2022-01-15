@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link as LinkR} from 'react-router-dom';
 import { Link as LinkS} from 'react-scroll';
 import pirulen from '../../fonts/batman.ttf'
-
+import gidole from '../../fonts/Gidole.otf'
 
 
 export const Nav = styled.nav`
@@ -17,10 +17,16 @@ export const Nav = styled.nav`
     top: 0;
     z-index: 10;
     letter-spacing: .2vh;
+
     @font-face {
     font-family: 'fofbb';
     src: url(${pirulen});
-}
+    }   
+
+    @font-face {
+        font-family: gidole;
+        src: url(${gidole});
+    }
     
     @media screen and (max-width: 960px){
         transition: 0.8s all ease;
@@ -33,7 +39,7 @@ export const NavbarContainer = styled.div`
     height: 80px;
     z-index: 1;
     width: 100%;
-    padding: 0 24px;
+    padding: 0 0;
     max-width: 1100px;
 
 `;
@@ -45,7 +51,7 @@ export const NavLogo = styled(LinkR)`
     font-size: 2vh;
     display: flex;
     align-items: center;
-    margin-left: 5px;
+    margin-left: 0px;
     font-weight: bold;
     text-decoration: none;
 `;
@@ -71,19 +77,26 @@ export const ImgLogo = styled.img`
 
 export const RetroLogo = styled.img`
    
-    height: 150%;
+    height: 10vh;
     width: auto;
     margin-right: 1vw;
+    margin-left: -5vw;
 
-    @media screen and (max-width:1024){
-        height: 40%;
-        
+    @media screen and (max-width: 1334px){
+      
+        margin-left: 0vw;
+
+    }
+
+    @media screen and (max-width:1024px){
+        height: 10vw;
+        margin-left: 0vw;
         width: auto;
     }
 
     @media screen and (max-width: 460px){
         margin-right: 4vw !important;
-        height: 20%;
+        height: 8vh;
         width: auto;
     }
 `;
@@ -91,6 +104,28 @@ export const RetroLogo = styled.img`
 
 export const MobileIcon = styled.div`
     display: none;
+
+    @media screen and (max-width: 1334px){
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    @media screen and (max-width: 1024px){
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: #fff;
+    }
 
     @media screen and (max-width: 768px){
         display: block;
@@ -108,11 +143,20 @@ export const MobileIcon = styled.div`
 export const NavMenu = styled.ul`
 
     display: flex;
-    align-items: center;
+    align-items: right;
     list-style: none;
     text-align: center;
-    margin-right: -22px;
+    margin-left: 50vh;
     padding-right: 5vh;
+    font-family: gidole;
+
+    @media screen and (max-width: 1334px){
+        display: none;
+    }
+
+    @media screen and (max-width: 1024px){
+        display: none;
+    }
 
     @media screen and (max-width: 768px){
         display: none;
@@ -122,7 +166,7 @@ export const NavMenu = styled.ul`
 export const NavItem = styled.li`
     font-size: 1.5vh;
     height: 80px;
-    
+    font-family: gidole;
     
 
 `;
@@ -136,6 +180,7 @@ export const NavLinks = styled(LinkS)`
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
+    font-family: gidole;    
     
 
     &.active{
@@ -147,6 +192,17 @@ export const NavLinks = styled(LinkS)`
 export const NavBtnContainer = styled.nav`
     display: flex;
     align-items: center;
+
+
+
+    @media screen and (max-width: 1334px){
+        display: none;
+    }
+
+    @media screen and (max-width: 1024px){
+        display: none;
+    }
+
     @media screen and (max-width: 768px){
         display: none;
     }

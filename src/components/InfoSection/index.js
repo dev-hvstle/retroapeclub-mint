@@ -47,6 +47,22 @@ const HeroSection = () => {
 
                                 <InfoP>RETRO APE CLUB
                                 </InfoP>
+
+                                <InfoP>
+                                Was born from the creative mind of Jet_i_am, A Kaiju Kingz holder and an active
+                                community member and current artist for 1/1 unpixelated version for
+                                Project Godjira and Project Godjira Gen 2. The collection will be a 
+                                total of 5000 Retro Apes that puts emphasis on a greyscale theme for its art
+                                highlighting the retro black and white days instead of the
+                                usual norm and aims to give back to the community
+                                for every sales milestone that is reached. 
+                                </InfoP>
+                                
+                                <InfoP>
+                                Pure Art and Chill Vibes and access
+                                to an alpha that provides value to the community. Holding 5 Retro Apes
+                                might give you access to a future project 
+                                </InfoP>
                             </HeroImgWrapper>
                         </Column1>
 

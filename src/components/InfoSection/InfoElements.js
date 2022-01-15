@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import fofbb from '../../fonts/fofbb_ital.otf';
 import cyber from '../../fonts/batman.ttf';
 import para from '../../fonts/para.otf'
+import gidole from '../../fonts/Gidole.otf'
 
 export const HeroContainer = styled.div`
 
@@ -27,6 +28,11 @@ export const HeroContainer = styled.div`
         src: url(${para});
     }
 
+    @font-face {
+        font-family: gidole;
+        src: url(${gidole});
+    }
+
     
      /* Add: before styles */
      :before{
@@ -48,21 +54,21 @@ export const HeroBg = styled.div`
     right: 0;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: auto;
     height: 100vh;
     overflow: hidden;
   
   
 
     @media screen and (max-width: 768px){
-        height: 120vh;
+        height: 150vh;
        
         
         
     }
 
     @media screen and (max-width: 460px){
-        height: 260vw;
+        height: 160vh;
         top:0vh;
         
     }
@@ -71,24 +77,29 @@ export const HeroBg = styled.div`
 
 export const ImgBg = styled.img`
     width: 100%;
-    height: 100%;
+    height: 100vh;
   
 
-    @media screen and (max-width:768){
+    @media screen and (max-width:1024px){
         display: block;
         width: auto;
-        height: 100%;
-        -o-object-fit: cover;
-        object-fit: cover;
+        height: 120vh;
+     
+   }
+
+    @media screen and (max-width:768px){
+        display: block;
+        width: auto;
+        height: 150vh;
+     
    }
   
    
    @media screen and (max-width:460px){
         display: block;
         width: auto;
-        height: 150%;
-        -o-object-fit: cover;
-        object-fit: cover;
+        height: 180vh;
+        
    }
 `;
 
@@ -115,11 +126,15 @@ export const HeroRow = styled.div`
     @media screen and (max-width: 768px){
         grid-template-areas: 'col1 col1' 'col2 col2';
     }
+
+    @media screen and (max-width: 460px){
+        grid-template-areas: 'col1 col1' 'col2 col2';
+    }
 `;
 
 export const Column1 = styled.div`
     margin-bottom: 30px;
-    padding:2vh;
+    padding:1vh;
     padding-top:0vh;
     grid-area: col1;
     
@@ -127,22 +142,41 @@ export const Column1 = styled.div`
 `;
 
 export const Column2 = styled.div`
-    padding: 0 0px;
+    padding: 0 24px;
     grid-area: col2;
+    padding-bottom:20vh;
+
+    @media screen and (max-width:1024px){
+        padding-top:10vh;
+    }
+
+    @media screen and (max-width:468px){
+        padding-top:0vh;
+        
+        padding: 5vh;
+    }
 `;
 
 export const HeroContent = styled.div`
     z-index: 3;
     max-width: 1200px;
     position: absolute;
-    top:20vh;
-    padding-top: 10;
+    top:10vh;
+    padding-top: 10vh;
     padding-bottom: 5vh;
     padding-left: 0vh;
     padding-right: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width:1024px){
+        top:5vh;
+        padding-top: 1vh;
+        padding-bottom: 5vh;
+        padding-left: 2vh;
+        padding-right: 2vh;
+    }
 
     @media screen and (max-width:768px){
         top:10vh;
@@ -211,8 +245,25 @@ export const HeroImgWrapper = styled.div`
 
 
 export const HeroImg = styled.img`
-    width: 100%;
-    border-radius: 20px;
+    width: 60vh;
+    padding: 5vh;
+   
+
+    @media screen and (max-width:1024px){
+        padding-top: 3vh;
+        width: 55vh;
+        padding: 5vh;
+    }
+
+    @media screen and (max-width:768px){
+        width: 60vh;
+        padding: 5vh;
+    }
+
+    @media screen and (max-width:460px){
+        width: 50vh;
+        padding: 5vh;
+    }
 `;
 
 
@@ -228,7 +279,7 @@ export const Column2Wrapper = styled.div`
     padding-left: 0vh;
     padding-right: 0vh;
     
-
+    
     @media screen and (max-width:460px){
         padding: 0;
     }
@@ -311,14 +362,27 @@ export const InfoH1 = styled.h1`
     font-size: 5vh;
     padding-bottom:0vh;
 
+    @media screen and (max-width: 1024px){
+        font-size: 3vh;
+        letter-spacing: .5vh;
+        line-height: 3vh;
+        padding-top:0vh;
+        padding-bottom:1vh;
+        text-align: left;
+    }
+
     @media screen and (max-width: 768px){
-        font-size: 40px;
+        font-size: 3vh;
         padding-top:0vh;
         text-align: center;
     }
 
     @media screen and (max-width: 480px){
         font-size: 32px;
+        letter-spacing: .5vh;
+        line-height: 5vh;
+        padding-top:0vh;
+        padding-bottom:1vh;
         text-align: center;
     }
 `;
@@ -327,23 +391,32 @@ export const InfoH1 = styled.h1`
 export const InfoP = styled.p`
 
     color: #fff;
-    font-size: 20px;
-    text-align: left;
+    font-size: 1.6vh;
+    text-align: justify;
     padding-bottom:2vh;
     font-family: para;
     letter-spacing: .3vh;
-
+    font-family: gidole;
     padding: 5vh;
+    padding-top: 2vh;
     padding-bottom:0vh;
 
-    @media screen and (max-width: 768px){
-        font-size: 20px;
-        text-align: center;
+    @media screen and (max-width: 1024px){
+        font-size: 1vh;
+        text-align: justify;
         
     }
 
+
+    @media screen and (max-width: 768px){
+        font-size: 1vh;
+       
+        text-align: center;
+    }
+
     @media screen and (max-width: 480px){
-        font-size: 20px;
+        font-size: 1.4vh;
+        text-align: center;
     }
     
 

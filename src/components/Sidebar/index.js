@@ -12,7 +12,11 @@ export const Sidebar = ({isOpen, toggle}) => {
 
             <SidebarWrapper>
                 
-               
+                <SidebarMenu>
+                    <SidebarLink>ABOUT</SidebarLink>
+                    <SidebarLink>ABOUT</SidebarLink>
+                    <SidebarLink>ABOUT</SidebarLink>
+                </SidebarMenu>
                 <SideBtnWrap>
                     <SidebarRoute to='/Connect Wallet'>
                         Connect Wallet
