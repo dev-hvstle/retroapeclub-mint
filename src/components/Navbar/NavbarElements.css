@@ -13,7 +13,7 @@ button, button::after {
     background: linear-gradient(45deg, transparent 5%, #ff4655 5%);
     border: 0;
     color: #fff;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     line-height: 0px;
     box-shadow: 6px 0px 0px #0f1923;
     outline: transparent;

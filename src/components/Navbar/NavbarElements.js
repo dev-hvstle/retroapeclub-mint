@@ -215,7 +215,7 @@ export const NavBtn = styled.button`
     white-space: nowrap;
     padding: 10px 22px;
     color: white;
-    font-size: 13px;
+
     outline: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
@@ -233,8 +233,8 @@ export const NavBtn = styled.button`
 
 export const ButtonWrap = styled.div`
     display: flex;
-    justify-content: flex-start;
-    width: 5vh;
+ 
+    width: auto;
     height: 5%;
 
     @media screen and (max-width: 1024px){
