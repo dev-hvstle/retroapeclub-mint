@@ -6,7 +6,7 @@ import para from '../../fonts/para.otf'
 export const HeroContainer = styled.div`
 
 
-  
+    clip-path: polygon(0 0, 10% 0, 20% 8%, 80% 8%, 89% 0, 100% 0, 100% 100%, 85% 100%, 74% 100%, 30% 100%, 18% 100%, 0 100%);
     background: #0c0c0c;
     display: flex;
     justify-content: center;
