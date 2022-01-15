@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Link as LinkR} from 'react-router-dom';
 import { Link as LinkS} from 'react-scroll';
-import pirulen from '../../fonts/RoadRage.otf'
+import pirulen from '../../fonts/roadrage.otf'
 import gidole from '../../fonts/Gidole.otf'
 
 
