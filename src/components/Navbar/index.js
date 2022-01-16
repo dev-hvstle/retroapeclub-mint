@@ -71,9 +71,9 @@ const Navbar = ({ toggle,initializeWallet, isInitialized, account }) => {
                             
                         </ImgWrap>
 
-                        <ImgWrap>
+                        <ImgWrap href="https://discord.gg/SwVvNY8ru4" rel="noopener">
                         
-                            <ImgLogo src={discord} href="https://discord.gg/SwVvNY8ru4" rel="noopener"></ImgLogo>
+                            <ImgLogo src={discord}></ImgLogo>
                             
                         </ImgWrap>
                    
