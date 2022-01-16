@@ -125,7 +125,7 @@ export const HeroContent = styled.div`
     z-index: 3;
     max-width: 1200px;
     position: absolute;
-    top:20vh;
+    top:15vh;
     padding-top: 10;
     padding-bottom: 5vh;
     padding-left: 0vh;
@@ -179,7 +179,7 @@ export const HeroH1 = styled.h1`
     text-align: left;
     font-family: rr;
     letter-spacing: 1.1vh;
-    line-height: 5vh;
+    line-height: 6.5vh;
     padding-bottom:1.5vh;
     background: -webkit-linear-gradient(#2022d3, #fff5fb , #a30051 , #fff5fb 80%);
     padding-left: 1vh;
