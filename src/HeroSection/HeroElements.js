@@ -181,6 +181,10 @@ export const HeroH1 = styled.h1`
     letter-spacing: 1.1vh;
     line-height: 5vh;
     padding-bottom:1.5vh;
+    background: -webkit-linear-gradient(#2022d3, #fff5fb , #a30051 , #fff5fb 80%);
+    padding-left: 1vh;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
     @media screen and (max-width:1280px){
        
@@ -289,7 +293,7 @@ export const ButtonWrap = styled.div`
     justify-content: flex-start;
     padding-top: 3vh;
     width: auto;
-    height: 20%;
+    height: 25%;
     margin-top: 5%;
 
     @media screen and (max-width: 768px){

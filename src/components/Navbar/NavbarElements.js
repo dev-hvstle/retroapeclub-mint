@@ -235,7 +235,7 @@ export const ButtonWrap = styled.div`
     display: flex;
     justify-content: flex-start;
     width: auto;
-    height: 10%;
+    height: 0%;
     padding-bottom: 5vh;
 
 

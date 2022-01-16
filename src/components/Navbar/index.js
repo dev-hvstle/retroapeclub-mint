@@ -76,13 +76,7 @@ const Navbar = ({ toggle,initializeWallet, isInitialized, account }) => {
                             <ImgLogo src={discord} to="/"></ImgLogo>
                             
                         </ImgWrap>
-
-                        <ImgWrap>
-                        
-                            <ImgLogo src={fb} to="/"></ImgLogo>
-                            
-                        </ImgWrap>
-                        
+                   
                         <ButtonWrap>
                          
                             
