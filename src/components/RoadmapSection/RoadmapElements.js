@@ -19,7 +19,7 @@ export const HeroContainer = styled.div`
 
     @media screen and (max-width: 1200px){
         position: relative;
-        top:110vh;
+        top:100vh;
         
     }
 
