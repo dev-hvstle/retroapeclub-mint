@@ -3,6 +3,7 @@ import { Link as LinkR} from 'react-router-dom';
 import { Link as LinkS} from 'react-scroll';
 import pirulen from '../../fonts/roadrage.otf'
 import gidole from '../../fonts/Gidole.otf'
+import { HashLink as Link } from 'react-router-hash-link'
 
 
 export const Nav = styled.nav`
@@ -170,6 +171,7 @@ export const NavItem = styled.li`
     
 
 `;
+
 
 export const NavLinks = styled(LinkS)`
 

@@ -7,7 +7,7 @@ import twitter from '../../Image/twitter.png'
 import discord from '../../Image/discord.png'
 import fb from '../../Image/fb.png'
 import Logo from '../../Image/retro.png';
-
+import { HashLink as Link } from 'react-router-hash-link'
 
 import {
     Nav, 
@@ -48,13 +48,13 @@ const Navbar = ({ toggle,initializeWallet, isInitialized, account }) => {
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to="about">ABOUT</NavLinks>
+                            <NavLinks to="/about">ABOUT</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="about">ROADMAP</NavLinks>
+                            <NavLinks to="/roadmap">ROADMAP</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="about">TEAMS</NavLinks>
+                            <NavLinks to="/team">TEAMS</NavLinks>
                         </NavItem>
       
                     </NavMenu>

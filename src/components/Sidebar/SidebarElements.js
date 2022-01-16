@@ -67,7 +67,8 @@ export const SidebarLink = styled(LinkS)`
     transition: 0.2s ease-in-out;
     font-family: gidole;
     text-decoration: none;
-    padding-top: 15vh;
+    position:relative;
+    top:10vh;
     color: #fff;
     cursor: pointer;
     
@@ -109,7 +110,6 @@ text-decoration: none;
 }
 
 `
-
 
 export const ImgLogo = styled.img`
     display: flex;

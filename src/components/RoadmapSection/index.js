@@ -35,7 +35,7 @@ const RoadmapSection = () => {
   
 
     return (
-        <HeroContainer>
+        <HeroContainer id="roadmap">
             <HeroBg>
                 <ImgBg src={bg}></ImgBg>
               

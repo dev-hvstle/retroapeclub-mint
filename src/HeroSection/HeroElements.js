@@ -236,7 +236,7 @@ export const HeroImgWrapper = styled.div`
 `;
 
 export const HeroImg = styled.img`
-    width: 100%;
+    width: 150%;
     border-radius: 20px;
 
     @media screen and (max-width: 768px){
@@ -296,12 +296,24 @@ export const ButtonWrap = styled.div`
     height: 25%;
     margin-top: 5%;
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 1024px){
+        display: flex;
         justify-content: center;
+        align-items: center;
+        padding-left: 0vh;
+    }
+
+    @media screen and (max-width: 768px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 20vh;
     }
 
     @media screen and (max-width: 480px){
+        display: flex;
         justify-content: center;
+        align-items: center;
     }
     
     
