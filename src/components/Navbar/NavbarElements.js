@@ -257,7 +257,7 @@ export const ButtonWrap = styled.div`
    
 `
 
-export const ImgWrap = styled.image`
+export const ImgWrap = styled.a`
     display: flex;
     justify-content: flex-start;
     align-items: center;

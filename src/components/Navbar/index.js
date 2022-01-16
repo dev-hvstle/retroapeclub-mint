@@ -65,15 +65,15 @@ const Navbar = ({ toggle,initializeWallet, isInitialized, account }) => {
 
                         </ImgWrap>
 
-                        <ImgWrap>
+                        <ImgWrap href="https://twitter.com/Retro_Ape_Club" rel="noopener">
                         
-                            <ImgLogo src={twitter} href="https://twitter.com/Retro_Ape_Club" rel="noopener"></ImgLogo>
+                            <ImgLogo src={twitter}></ImgLogo>
                             
                         </ImgWrap>
 
                         <ImgWrap>
                         
-                            <ImgLogo src={discord} to="/"></ImgLogo>
+                            <ImgLogo src={discord} href="https://discord.gg/SwVvNY8ru4" rel="noopener"></ImgLogo>
                             
                         </ImgWrap>
                    
