@@ -301,7 +301,14 @@ export const ButtonWrap = styled.div`
     }
     
     
-`
+`;
+
+export const ButtonMint = styled.img`
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    align-items: center;
+`;
 
 
 
