@@ -40,7 +40,7 @@ export const NavbarContainer = styled.div`
     z-index: 1;
     width: 100%;
     padding: 0 0;
-    max-width: 1100px;
+    max-width: 1300px;
 
 `;
 
@@ -238,6 +238,7 @@ export const ButtonWrap = styled.div`
     height: 10%;
     padding-bottom: 5vh;
 
+
     @media screen and (max-width: 1024px){
         padding-right: 2vh;
     }
@@ -246,6 +247,11 @@ export const ButtonWrap = styled.div`
         padding-right: 2vh;
         height: 5%;
         width: 50vw;
+         padding-right: 0vh;
+    }
+    
+    @media screen and (max-width: 468px){
+        padding-right: 0vh;
     }
     
    

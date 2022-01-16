@@ -6,8 +6,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: -webkit-linear-gradient(#050a45  , #a30051 , #fff5fb);
+    background: -webkit-linear-gradient(#2022d3 42%, #fff5fb 40% 46%, #a30051 46% 47%, #fff5fb 68%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
+    font-size: 2vh;
   }
