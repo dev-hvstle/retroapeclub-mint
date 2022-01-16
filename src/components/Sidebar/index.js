@@ -7,6 +7,8 @@ import {SidebarContainer, Icon, CloseIcon,
     SidebarSocials,
     ImgLogo
 } from './SidebarElements';
+
+import './SidebarElements.css';
 import opensea from '../../Image/opensea.png'
 import twitter from '../../Image/twitter.png'
 import discord from '../../Image/discord.png'
@@ -65,9 +67,8 @@ export const Sidebar = ({isOpen, toggle, account, initializeWallet, isInitialize
 
 
                 <SideBtnWrap>
-                    
 
-                <button className="btnMint" onClick={initializeWallet}>
+                <button className="btnConnect" onClick={initializeWallet}>
                     {(isInitialized ? sanitizedAddress : account)}</button>
 
                 </SideBtnWrap>

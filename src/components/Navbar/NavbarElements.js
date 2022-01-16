@@ -233,9 +233,10 @@ export const NavBtn = styled.button`
 
 export const ButtonWrap = styled.div`
     display: flex;
- 
+    justify-content: flex-start;
     width: auto;
-    height: 5%;
+    height: 10%;
+    padding-bottom: 5vh;
 
     @media screen and (max-width: 1024px){
         padding-right: 2vh;
@@ -257,10 +258,16 @@ export const ImgWrap = styled.image`
     width: auto;
     height: 5vh;
     cursor: pointer;
+   
+`
 
-   
+export const imgBtn = styled.button`
+
   
-   
+    width: auto;
+    height: 30vh;
+    cursor: pointer;
+
 `
 
 

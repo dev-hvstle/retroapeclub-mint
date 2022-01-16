@@ -8,6 +8,7 @@ import discord from '../../Image/discord.png'
 import fb from '../../Image/fb.png'
 import Logo from '../../Image/retro.png';
 
+
 import {
     Nav, 
     NavbarContainer, 
@@ -21,7 +22,8 @@ import {
     RetroLogo,
     ImgWrap,
     ButtonWrap,
-    NavBtnContainer
+    NavBtnContainer,
+    imgBtn
     
 
 } from './NavbarElements';
@@ -32,6 +34,7 @@ const Navbar = ({ toggle,initializeWallet, isInitialized, account }) => {
 
     const patt = /^[a-zA-Z0-9]{10}/;
     const sanitizedAddress = account.match(patt);
+
     return (
         <>
             <Nav>
@@ -81,7 +84,10 @@ const Navbar = ({ toggle,initializeWallet, isInitialized, account }) => {
                         </ImgWrap>
                         
                         <ButtonWrap>
-                            <button className="btnMint"  onClick={initializeWallet}>{(isInitialized ? sanitizedAddress : account)}</button>
+                         
+                            
+                            <button className='btnConnect' onClick={initializeWallet}>{(isInitialized ? sanitizedAddress : account)}</button>
+                            
                         </ButtonWrap>
                         
                     </NavBtnContainer>

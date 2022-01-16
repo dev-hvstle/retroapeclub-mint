@@ -1,0 +1,13 @@
+.btnConnect{
+    background-color: transparent;
+    border: transparent;
+    height: 5vh;
+    width: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: -webkit-linear-gradient(#050a45  , #a30051 , #fff5fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+  }

@@ -17,6 +17,8 @@ import { TextField } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core';
 import Image from '../Image/astronaut.png';
 
+import MintBtn from '../Image/btnMint.png'
+
 
 
 const HeroSection = ({token, totalSupply, account, mintList, reservedList}) => {
@@ -134,8 +136,8 @@ const HeroSection = ({token, totalSupply, account, mintList, reservedList}) => {
                             
                                 <TextField type="number" id='nftQty' InputProps={{classes: classes}} InputLabelProps={{classes: labelClasses}} label="Mint Quantity" fullWidth></TextField>
                                 
-                                <ButtonWrap src="">
-                                    <button className="btnMint" onClick={buyNft}>MINT</button>
+                                <ButtonWrap >
+                                    <button src={MintBtn} onClick={buyNft}>MINT</button>
                                 </ButtonWrap>
 
                             </HeroImgWrapper>
