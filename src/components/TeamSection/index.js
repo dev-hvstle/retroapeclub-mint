@@ -10,7 +10,7 @@ import {
 
 import bg from '../../Image/bgblack.jpg'
 import jetiam from '../../Image/JET_I_AM.gif'
-import itachi from '../../Image/ITACHII.jpg'
+import itachi from '../../Image/ITACHII.png'
 import toman from '../../Image/TOMAN651.png'
 import bakedgoods from '../../Image/BAKEDGOODS.png'
 
