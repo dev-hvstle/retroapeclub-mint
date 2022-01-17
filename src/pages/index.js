@@ -96,9 +96,7 @@ const Home = () => {
           <InfoSection />
           <RoadmapSection />
           <TeamSection />
-          <FooterSection />
-          
-          
+          <FooterSection />       
         </>
     )
 }
