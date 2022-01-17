@@ -107,14 +107,14 @@ export const TeamBg = styled.div`
     
 
     @media screen and (max-width: 768px){
-        height: 150vh;
+        height: 130vh;
        
         
         
     }
 
     @media screen and (max-width: 460px){
-        height: 160vh;
+        height: 120vh;
         top:0vh;
         
     }
