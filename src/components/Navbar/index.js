@@ -48,13 +48,21 @@ const Navbar = ({ toggle,initializeWallet, isInitialized, account }) => {
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to="/about">ABOUT</NavLinks>
+                            <NavLinks to="about"
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            >ABOUT</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="/roadmap">ROADMAP</NavLinks>
+                            <NavLinks to="roadmap"
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            >ROADMAP</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="/team">TEAMS</NavLinks>
+                            <NavLinks to="team">TEAMS</NavLinks>
                         </NavItem>
       
                     </NavMenu>

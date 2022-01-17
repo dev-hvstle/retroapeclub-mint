@@ -131,7 +131,7 @@ const HeroSection = ({token, totalSupply, account, mintList, reservedList}) => {
                             <HeroImgWrapper>
                                 <HeroH1>Ape in to the Retro Ape Club</HeroH1>
                                 <HeroP>WHITELIST SALE NOW ACTIVE</HeroP>
-                                <HeroP>5000 UNIQUE NFT'S</HeroP>
+                                <HeroP>5000 UNIQUE NFT</HeroP>
                                 <HeroP>PRICE 0.04 ETH</HeroP>
                             
                                 <TextField type="number" id='nftQty' InputProps={{classes: classes}} InputLabelProps={{classes: labelClasses}} label="Mint Quantity" fullWidth></TextField>
