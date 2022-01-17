@@ -70,11 +70,7 @@ export const Sidebar = ({isOpen, toggle, account, initializeWallet, isInitialize
                         
                     </ImgWrap>
 
-                    <ImgWrap>
-                    
-                        <ImgLogo src={fb} to="/"></ImgLogo>
-                        
-                    </ImgWrap>
+                 
 
                     </SidebarSocials>
                    
