@@ -71,17 +71,6 @@ export const ImgBg = styled.img`
     background: #232a34;
 `;
 
-export const VideoBg = styled.video`
-
-    width: 100%;
-    height: 100vh;
-    -o-object-fit: cover;
-    object-fit: cover;
-    background: #232a34;
-    opacity: 0;
-    
-
-`
 
 
 export const HeroRow = styled.div`
@@ -98,17 +87,22 @@ export const HeroRow = styled.div`
 
 export const Column1 = styled.div`
     
-    padding: 0 15px;
+    padding: 0 25px;
     grid-area: col1;
+    -o-object-fit: cover;
+    object-fit: cover;
 
     @media screen and (max-width: 768px){
         display: flex;
         justify-content: center;
+        margin: 5vh;
+        
     }
 
-    @media screen and (max-width: 480px){
-        font-size: 32px;
-        text-align: center;
+    @media screen and (max-width: 460px){
+        display: flex;
+        justify-content: center;
+        
     }
     
     
@@ -200,7 +194,7 @@ export const HeroH1 = styled.h1`
     }
 
     @media screen and (max-width: 480px){
-        font-size: 32px;
+        font-size: 3vh;
         text-align: center;
     }
 `;
