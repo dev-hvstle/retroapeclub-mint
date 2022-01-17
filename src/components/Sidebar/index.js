@@ -30,9 +30,24 @@ export const Sidebar = ({isOpen, toggle, account, initializeWallet, isInitialize
             <SidebarWrapper>
                 
                 <SidebarMenu>
-                    <SidebarLink>ABOUT</SidebarLink>
-                    <SidebarLink>ROADMAP</SidebarLink>
-                    <SidebarLink>TEAMS</SidebarLink>
+                    <SidebarLink
+                    to="about"
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    >ABOUT</SidebarLink>
+                    <SidebarLink
+                    to="about"
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    >ROADMAP</SidebarLink>
+                    <SidebarLink
+                    to="team"
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    >TEAMS</SidebarLink>
                 </SidebarMenu>
 
                     <SidebarSocials>
