@@ -88,9 +88,19 @@ export const HeroRow = styled.div`
 export const Column1 = styled.div`
     
     padding: 0 25px;
+    padding-right: 5vh;
+    padding-left: 5vh;
     grid-area: col1;
     -o-object-fit: cover;
     object-fit: cover;
+    
+    @media screen and (max-width: 820px){
+        display: flex;
+        justify-content: center;
+        padding-right: 5vh;
+    padding-left: 5vh;
+        
+    }
 
     @media screen and (max-width: 768px){
         display: flex;
@@ -113,6 +123,8 @@ export const Column2 = styled.div`
     padding:2vh;
     padding-top:0vh;
     grid-area: col2;
+
+    
 `;
 
 export const HeroContent = styled.div`
@@ -150,12 +162,20 @@ export const HeroContent = styled.div`
         padding-right: 5vh;
     }
 
-    @media screen and (max-width:768px){
+    @media screen and (max-width:820px){
         top:10vw;
         padding-top: 10;
         padding-bottom: 5vh;
         padding-left: 5vh;
-        padding-right: 5vh;
+        padding-right: 5vh; 
+    }
+
+    @media screen and (max-width:768px){
+        top:0vw;
+        padding-top: 10;
+        padding-bottom: 5vh;
+        padding-left: 2vh;
+        padding-right: 2vh;
     }
 
     @media screen and (max-width:468px){
@@ -187,10 +207,17 @@ export const HeroH1 = styled.h1`
         font-size: 3.5vh;
     }
 
-
-    @media screen and (max-width: 768px){
+    
+    @media screen and (max-width: 820px){
         font-size: 4vh;
         text-align: center;
+    }
+
+
+    @media screen and (max-width: 768px){
+        font-size: 3vh;
+        text-align: center;
+        line-height: 3.5vh;
     }
 
     @media screen and (max-width: 480px){
@@ -220,24 +247,47 @@ export const HeroP = styled.p`
 
 `;
 
-
-
 export const HeroImgWrapper = styled.div`
     max-width: 555px;
     height: 100%;
+
+    @media screen and (max-width: 787px){
+        max-width: 350px;
+        padding-right: 0vh;
+        padding-left: 5vh;
+    }
+
+    @media screen and (max-width: 768px){
+        max-width: 350px;
+        padding-right: 5vh;
+        padding-left: 5vh;
+    }
+
+    @media screen and (max-width: 460px){
+        max-width: 350px;
+
+        padding-right: 5vh;
+    padding-left: 5vh;
+    }
     
 `;
 
 export const HeroImg = styled.img`
-    width: 150%;
+    width: 90vh;
     border-radius: 20px;
 
+    @media screen and (max-width: 1024px){
+        padding-top: 13vh;
+        width: 50vh;
+    }
+
     @media screen and (max-width: 768px){
-        width: 50%;
+        padding-top: 0vh;
+        width: 50vh;
     }
 
     @media screen and (max-width: 480px){
-        width: 100%;
+        width: 40vh;
     }
 `;
 
@@ -250,11 +300,13 @@ export const Column2Wrapper = styled.div`
     padding-top: 0vh;
     padding-bottom: 5vh;
     padding-left: 5vh;
-    padding-right: 0vh;
+    padding-right: 5vh;
 
     @media screen and (max-width: 460px){
         padding:5vh;
     }
+
+    
 `;
 
 export const MintBtn = styled.button`
@@ -284,30 +336,9 @@ export const MintBtn = styled.button`
 export const ButtonWrap = styled.div`
     display: flex;
     justify-content: flex-start;
-    padding-top: 3vh;
     width: auto;
-    height: 25%;
-    margin-top: 5%;
-
-    @media screen and (max-width: 1024px){
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-left: 0vh;
-    }
-
-    @media screen and (max-width: 768px){
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-left: 20vh;
-    }
-
-    @media screen and (max-width: 480px){
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    height: 80%;
+    padding-top: 5%;
     
     
 `;

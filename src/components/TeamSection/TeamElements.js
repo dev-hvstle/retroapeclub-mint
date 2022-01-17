@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import fofbb from '../../fonts/fofbb_ital.otf';
 import rr from '../../fonts/roadrage.otf';
 import para from '../../fonts/para.otf'
+import gidole from '../../fonts/Gidole.otf'
 
 export const TeamContainer = styled.div`
 
@@ -31,6 +32,12 @@ export const TeamContainer = styled.div`
     @media screen and (max-width: 1216px){
         position: relative;
         top:100vh;
+        
+    }
+
+    @media screen and (max-width: 1024px){
+        position: relative;
+        top:130vh;
         
     }
 
@@ -78,6 +85,11 @@ export const TeamContainer = styled.div`
         src: url(${para});
     }
 
+    @font-face {
+        font-family: gidole;
+        src: url(${gidole});
+    }
+
      /* Add: before styles */
      :before{
         content: '';
@@ -102,22 +114,31 @@ export const TeamBg = styled.div`
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     overflow: hidden;
-    
 
-    @media screen and (max-width: 768px){
-        height: 130vh;
-       
-        
-        
-    }
+
+    @media screen and (max-width:1024px){
+        display: block;
+        width: auto;
+        height: 255vh;
+     
+   }
+
+    @media screen and (max-width:768px){
+        display: block;
+        width: auto;
+        height: 250vh;
+     
+   }
 
     @media screen and (max-width: 460px){
-        height: 120vh;
-        top:0vh;
+        height: 270vh;
+
         
     }
+
+
 
 `
 
@@ -131,14 +152,14 @@ export const ImgBg = styled.img`
     @media screen and (max-width:1024px){
         display: block;
         width: auto;
-        height: 120vh;
+        height: 255vh;
      
    }
 
     @media screen and (max-width:768px){
         display: block;
         width: auto;
-        height: 150vh;
+        height: 250vh;
      
    }
   
@@ -146,7 +167,7 @@ export const ImgBg = styled.img`
    @media screen and (max-width:460px){
         display: block;
         width: auto;
-        height: 180vh;
+        height: 270vh;
         
    }
 `;
@@ -180,16 +201,15 @@ export const TeamRow2 = styled.div`
 `;
 
 export const Column1 = styled.div`
-    
-    padding: 0 25px;
-    grid-area: col1;
-    -o-object-fit: cover;
-    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    padding: 0 0px;
+
 
     @media screen and (max-width: 768px){
         display: flex;
         justify-content: center;
-        margin: 5vh;
+       
         
     }
 
@@ -254,7 +274,7 @@ export const TeamContent = styled.div`
     }
 
     @media screen and (max-width:468px){
-        top:10vw;
+        top:20vw;
         padding-top: 1vh;
         padding-bottom: 5vh;
         padding-left: 2vh;
@@ -264,14 +284,45 @@ export const TeamContent = styled.div`
 
 export const TeamH1 = styled.h1`
     color: #fff;
-    font-size: 5vh;
-    text-align: left;
+    font-size: 10vh;
+    text-align: center;
+    font-family: rr;
+    letter-spacing: 1.1vh;
+    line-height: 1.5vh;
+    padding-bottom:15vh;
+    
+    padding-left: 1vh;
+    
+
+   
+
+    @media screen and (max-width:1024px){
+        font-size: 7vh;
+    }
+
+
+    @media screen and (max-width: 768px){
+        font-size: 4vh;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 480px){
+        font-size: 7vh;
+        text-align: center;
+    }
+`;
+
+
+export const TeamH2 = styled.h1`
+    color: #fff;
+    font-size: 4vh;
+    text-align: center;
     font-family: rr;
     letter-spacing: 1.1vh;
     line-height: 6.5vh;
-    padding-bottom:1.5vh;
-    
-    padding-left: 1vh;
+    padding-top:3vh;
+    padding-bottom:0.5vh;
+   
     
 
     @media screen and (max-width:1280px){
@@ -297,11 +348,23 @@ export const TeamH1 = styled.h1`
 
 
 
+
+
 export const TeamImgWrapper = styled.div`
-    max-width: 555px;
+    max-width: 30vh;
     height: 100%;
     
 `;
+
+export const TeamP = styled.p`
+
+    color: #fff;
+    font-size: 2vh;
+    text-align: center;
+    font-family: gidole;
+   
+
+`
 
 export const TeamImg = styled.img`
     width: 150%;
@@ -331,3 +394,56 @@ export const Column2Wrapper = styled.div`
         padding:5vh;
     }
 `;
+
+export const ImgLogo = styled.img`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    width: auto;
+    padding: 0vh;
+
+  
+`;
+
+
+export const FlexboxContainer = styled.div`
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    @media screen and (max-width: 1024px){
+       
+       flex-wrap: wrap;
+       justify-content: space-around;
+       align-items: center;
+       align-content: space-between;
+  
+   }
+    
+    @media screen and (max-width: 768px){
+       
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-between;
+   
+    }
+
+    @media screen and (max-width: 468px){
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-between;
+    }
+    
+
+`
+
+export const FlexboxTeamContent = styled.div`
+
+    padding: 5vh;
+ 
+
+`

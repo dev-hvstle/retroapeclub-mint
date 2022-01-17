@@ -143,10 +143,26 @@ export const Column1 = styled.div`
     padding:1vh;
     padding-top:0vh;
     grid-area: col1;
+
+    @media screen and (max-width:1024px){
+        padding: 0vh;
+        padding-bottom: 0vh;
+        display: flex;
+        justify-content: center;
+    }
     
     @media screen and (max-width:768px){
-        padding: 5vh;
+        padding: 3vh;
         padding-bottom: 0vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    @media screen and (max-width:468px){
+        padding: 3vh;
+        padding-bottom: 0vh;
+        display: flex;
+        justify-content: center;
     }
     
 `;
@@ -232,19 +248,24 @@ export const HeroH1 = styled.h1`
 export const HeroP = styled.p`
 
     color: #fff;
-    font-size: 20px;
+    font-size: 2vh;
     text-align: left;
     padding-bottom:2vh;
     font-family: para;
     letter-spacing: .3vh;
 
+    @media screen and (max-width: 1024px){
+        font-size: 5vh;
+        text-align: center;
+    }
+
     @media screen and (max-width: 768px){
-        font-size: 20px;
+        font-size: 2vh;
         text-align: center;
     }
 
     @media screen and (max-width: 480px){
-        font-size: 20px;
+        font-size: 2vh;
     }
     
 
@@ -264,9 +285,10 @@ export const HeroImg = styled.img`
    
 
     @media screen and (max-width:1024px){
-        padding-top: 3vh;
-        width: 55vh;
+        
+        width: 45vh;
         padding: 5vh;
+        padding-top: 7vh;
     }
 
     @media screen and (max-width:768px){
@@ -392,7 +414,7 @@ export const InfoH1 = styled.h1`
     }
 
     @media screen and (max-width: 480px){
-        font-size: 32px;
+        font-size: 2vh;
         letter-spacing: .5vh;
         line-height: 5vh;
         padding-top:0vh;

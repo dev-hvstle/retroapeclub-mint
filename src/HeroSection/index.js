@@ -25,43 +25,42 @@ const HeroSection = ({token, totalSupply, account, mintList, reservedList}) => {
 
     const useStyles = makeStyles({
         root:{
-            color: "#ff4655",
+            color: "#00CEFF",
             borderBottom: "1px",
-            
             "&.Mui-focused":{
-                color: "#fff"
+                color: "#FF00FE"
             },
             "&:before":{
-                borderBottomColor: "#ff4655"
+                borderBottomColor: "#00CEFF"
             },
             "&hover:not(.Mui-focused):before":{
-                borderBottomColor: "#ff4655"
+                borderBottomColor: "#02CDFF"
             },
             "&:after":{
-                borderBottomColor: "#ff4655"
+                borderBottomColor: "#FF00FE"
             }
         },
         input:{
             "&::selection":{
-                backgroundColor:"#ff4655",
-                color: "#fff"
+                backgroundColor:"#0C4E56",
+                color: "#101823"
             }
         }
     });
 
     const useLabelStyles = makeStyles({
         root:{
-            color: "#fff",
+            color: "#00CEFF",
             font: "10em",
             "&.Mui-focused":{
-                color: "#fff",
-                
+                color: "#FF00FE"
             }
         }
     });
 
     const classes = useStyles();
     const labelClasses = useLabelStyles();
+
 
     const buyNft = async () =>{
         if(typeof window.ethereum !== 'undefined'){
