@@ -60,21 +60,21 @@ export const Sidebar = ({isOpen, toggle, account, initializeWallet, isInitialize
 
                     <SidebarSocials>
 
-                    <ImgWrap>
+                    <ImgWrap >
                         
-                        <ImgLogo src={opensea} to="/"></ImgLogo>
+                        <ImgLogo src={opensea}></ImgLogo>
 
                     </ImgWrap>
 
-                    <ImgWrap>
+                    <ImgWrap href="https://twitter.com/Retro_Ape_Club" rel="noopener">
                     
-                        <ImgLogo src={twitter} to="/"></ImgLogo>
+                        <ImgLogo src={twitter}></ImgLogo>
                         
                     </ImgWrap>
 
-                    <ImgWrap>
+                    <ImgWrap href="https://discord.gg/SwVvNY8ru4" rel="noopener">
                     
-                        <ImgLogo src={discord} to="/"></ImgLogo>
+                        <ImgLogo src={discord} ></ImgLogo>
                         
                     </ImgWrap>
 

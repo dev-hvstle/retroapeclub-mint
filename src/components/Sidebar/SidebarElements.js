@@ -133,7 +133,7 @@ export const ImgLogo = styled.img`
 `;
 
 
-export const ImgWrap = styled.image`
+export const ImgWrap = styled.a`
 
     
     width: auto;
