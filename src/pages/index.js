@@ -7,7 +7,7 @@ import RetroApeClub from '../abi/RetroApeClub.json';
 import InfoSection from '../components/InfoSection';
 import RoadmapSection from '../components/RoadmapSection';
 import TeamSection from '../components/TeamSection';
-import Footer from '../components/Footer';
+import FooterSection from '../components/FooterSection';
  
 const Home = () => {
 
@@ -96,7 +96,7 @@ const Home = () => {
           <InfoSection />
           <RoadmapSection />
           <TeamSection />
-          <Footer />
+          <FooterSection />
           
           
         </>

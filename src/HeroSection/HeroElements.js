@@ -178,8 +178,24 @@ export const HeroContent = styled.div`
         padding-right: 2vh;
     }
 
+    @media screen and (max-width:540px){
+        top:15vh;
+        padding-top: 1vh;
+        padding-bottom: 5vh;
+        padding-left: 2vh;
+        padding-right: 2vh;
+    }
+
     @media screen and (max-width:468px){
         top:10vw;
+        padding-top: 1vh;
+        padding-bottom: 5vh;
+        padding-left: 2vh;
+        padding-right: 2vh;
+    }
+
+    @media screen and (max-width:280px){
+        top:20vh;
         padding-top: 1vh;
         padding-bottom: 5vh;
         padding-left: 2vh;

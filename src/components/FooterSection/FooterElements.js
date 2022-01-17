@@ -1,10 +1,48 @@
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
+import gidole from '../../fonts/Gidole.otf'
 
 export const FooterContainer = styled.footer`
-
+    position: relative;
+    top:255vh;
+    z-index: 100;
     background-color: #101522;
 
+    @font-face {
+        font-family: gidole;
+        src: url({gidole});
+    }
+
+    @media screen and (max-width:1660px){
+        top:245vh;
+    }
+
+    @media screen and (max-width:1020px){
+        top:355vh;
+    }
+
+    @media screen and (max-width:820px){
+        top:366vh;
+    }
+
+    @media screen and (max-width:768px){
+        top:449vh;
+        padding-bottom: 5vh;
+    }
+
+
+    @media screen and (max-width:540px){
+        top:440vh;
+     
+    }
+
+    @media screen and (max-width:468px){
+        top:460vh;
+    }
+
+    @media screen and (max-width:375px){
+        top:440vh;
+    }
 `
 
 export const FooterWrap = styled.div`
@@ -46,6 +84,7 @@ export const FooterLinkItems = styled.div`
     width: 160px;
     box-sizing: border-box;
     color: #fff;
+    
 
     @media screen and (max-width: 420px){
         margin: 0;
@@ -58,6 +97,7 @@ export const FooterLinkItems = styled.div`
 export const FooterLinkTitle = styled.h1`
     font-size: 14px;
     margin-bottom: 16px;
+    font-family: gidole;
 `
 
 export const FooterLink = styled(Link)`
@@ -65,6 +105,7 @@ export const FooterLink = styled(Link)`
     text-decoration: none;
     margin-bottom: 0.5rem;
     font-size: 14px;
+    font-family: gidole;
 
     &:hover{
         color: #01bf71;
@@ -75,7 +116,34 @@ export const FooterLink = styled(Link)`
 export const SocialMedia = styled.section`
     max-width: 1000px;
     width: 100%;
+    height: 100;
     
+`
+
+export const ImgLogo = styled.img`
+   
+    height: 15vh;
+ 
+    margin-right: 1vw;
+
+    @media screen and (max-width:1024){
+        height: 15vh;
+        
+        width: auto;
+    }
+
+    @media screen and (max-width: 460px){
+        margin-right: 4vw !important;
+        height: 15vh;
+        width: auto;
+    }
+`;
+
+export const ImgSocialLogo = styled.img`
+
+    height: 10vh;
+    padding-top: 3vh;
+
 `
 
 export const SocialMediaWrap = styled.div`
@@ -104,7 +172,8 @@ export const SocialLogo = styled(Link)`
 `
 
 export const WebsiteRights = styled.small`
-
+    font-family: gidole;
+    font-size: 2vh;
     color: #fff;
     margin-bottom: 16px;
 
