@@ -32,7 +32,7 @@ export const HeroContainer = styled.div`
 
     @media screen and (max-width: 468px){
         position: relative;
-        top:160vh;
+        top:150vh;
     
     }
 
@@ -153,7 +153,7 @@ export const HeroContent = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        top:10vw;
+        top:00vw;
         padding-top: 10;
         padding-bottom: 5vh;
         padding-left: 5vh;

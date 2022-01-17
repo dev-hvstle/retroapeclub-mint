@@ -6,7 +6,7 @@ import HeroSection from '../HeroSection';
 import RetroApeClub from '../abi/RetroApeClub.json';
 import InfoSection from '../components/InfoSection';
 import RoadmapSection from '../components/RoadmapSection';
-
+import TeamSection from '../components/TeamSection';
 const Home = () => {
 
     const [isOpen, setIsOpen] = useState(false)
@@ -93,6 +93,7 @@ const Home = () => {
           <HeroSection token={token} account={account}/>
           <InfoSection />
           <RoadmapSection />
+          <TeamSection />
           
           
         </>
