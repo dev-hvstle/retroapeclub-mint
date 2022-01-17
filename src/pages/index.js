@@ -7,6 +7,8 @@ import RetroApeClub from '../abi/RetroApeClub.json';
 import InfoSection from '../components/InfoSection';
 import RoadmapSection from '../components/RoadmapSection';
 import TeamSection from '../components/TeamSection';
+import Footer from '../components/Footer';
+ 
 const Home = () => {
 
     const [isOpen, setIsOpen] = useState(false)
@@ -94,6 +96,7 @@ const Home = () => {
           <InfoSection />
           <RoadmapSection />
           <TeamSection />
+          <Footer/>
           
           
         </>

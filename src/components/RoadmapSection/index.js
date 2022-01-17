@@ -14,8 +14,7 @@ import { HeroContainer, HeroBg,VideoBg,
         HeroP
         } from '../RoadmapSection/RoadmapElements'
 import bg from '../../Image/bgWhite.jpg';
-import { TextField } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core';
+
 import Image from '../../Image/astronaut.gif'
 
 import r1 from '../../Image/r1.png'

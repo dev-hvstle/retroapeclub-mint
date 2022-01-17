@@ -37,7 +37,7 @@ export const TeamContainer = styled.div`
 
     @media screen and (max-width: 1024px){
         position: relative;
-        top:130vh;
+        top:100vh;
         
     }
 

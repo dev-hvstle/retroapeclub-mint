@@ -3,7 +3,7 @@ import { Link as LinkR} from 'react-router-dom';
 import { Link as LinkS} from 'react-scroll';
 import pirulen from '../../fonts/roadrage.otf'
 import gidole from '../../fonts/Gidole.otf'
-import { HashLink as Link } from 'react-router-hash-link'
+
 
 
 export const Nav = styled.nav`
@@ -14,10 +14,11 @@ export const Nav = styled.nav`
     justify-content: center;
     align-items: center;
     font-size: 1rem;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 10;
     letter-spacing: .2vh;
+    width:100%;
 
     @font-face {
     font-family: 'fofbb';
@@ -184,7 +185,6 @@ export const NavLinks = styled(LinkS)`
     cursor: pointer;
     font-family: gidole;    
     
-
     &.active{
         border-bottom: 3px solid #01bf71;
     }

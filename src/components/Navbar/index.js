@@ -1,13 +1,13 @@
 import React from 'react'
-import logo from '../../Image/retroapeclub.png';
+
 import {FaBars} from 'react-icons/fa' 
 import './NavbarElements.css';
 import opensea from '../../Image/opensea.png'
 import twitter from '../../Image/twitter.png'
 import discord from '../../Image/discord.png'
-import fb from '../../Image/fb.png'
+
 import Logo from '../../Image/retro.png';
-import { HashLink as Link } from 'react-router-hash-link'
+
 
 import {
     Nav, 
@@ -62,7 +62,10 @@ const Navbar = ({ toggle,initializeWallet, isInitialized, account }) => {
                             >ROADMAP</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="team">TEAMS</NavLinks>
+                            <NavLinks to="team"
+                            smooth={true}
+                            duration={500}
+                            spy={true}>TEAM</NavLinks>
                         </NavItem>
       
                     </NavMenu>

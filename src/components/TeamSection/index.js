@@ -13,11 +13,11 @@ import jetiam from '../../Image/JET_I_AM.gif'
 import itachi from '../../Image/ITACHII.jpg'
 import toman from '../../Image/TOMAN651.png'
 import bakedgoods from '../../Image/BAKEDGOODS.png'
-import { Container } from '@material-ui/core'
+
 
 function TeamSection() {
     return (
-        <TeamContainer>
+        <TeamContainer id="team">
 
             <TeamBg>
                 
