@@ -68,7 +68,7 @@ export const SidebarLink = styled(LinkS)`
     font-family: gidole;
     text-decoration: none;
     position:relative;
-    top:10vh;
+    top:20vh;
     color: #fff;
     cursor: pointer;
     
@@ -82,9 +82,9 @@ export const SidebarLink = styled(LinkS)`
 export const SideBtnWrap = styled.div`
     display: flex;
     justify-content: center; 
-  
-    
-
+    align-items: center;
+    padding-bottom: 20vh;
+   
 `
 
 export const SidebarRoute = styled(LinkR)`

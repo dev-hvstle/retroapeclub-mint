@@ -50,6 +50,14 @@ export const Sidebar = ({isOpen, toggle, account, initializeWallet, isInitialize
                     >TEAMS</SidebarLink>
                 </SidebarMenu>
 
+
+                <SideBtnWrap>
+
+                <button className="btnConnect" onClick={initializeWallet}>
+                    {(isInitialized ? sanitizedAddress : account)}</button>
+
+                </SideBtnWrap>
+
                     <SidebarSocials>
 
                     <ImgWrap>
@@ -77,12 +85,7 @@ export const Sidebar = ({isOpen, toggle, account, initializeWallet, isInitialize
                
 
 
-                <SideBtnWrap>
-
-                <button className="btnConnect" onClick={initializeWallet}>
-                    {(isInitialized ? sanitizedAddress : account)}</button>
-
-                </SideBtnWrap>
+                
 
           
                 
