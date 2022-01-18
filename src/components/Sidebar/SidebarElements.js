@@ -137,7 +137,7 @@ export const ImgWrap = styled.a`
 
     
     width: auto;
-    height: 20vh;
+    height: 10vh;
     cursor: pointer;
 
    

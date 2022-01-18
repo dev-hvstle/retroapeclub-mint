@@ -54,7 +54,7 @@ export const HeroBg = styled.div`
     width: 100%;
     height: 100%;
     overflow: hidden;
-    
+   
 
     @media screen and (max-width: 768px){
         height:100%;
@@ -133,9 +133,7 @@ export const HeroContent = styled.div`
     position: absolute;
     top:15vh;
     padding-top: 10;
-    padding-bottom: 5vh;
-    padding-left: 0vh;
-    padding-right: 5vh;
+    padding: 2vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -171,7 +169,7 @@ export const HeroContent = styled.div`
     }
 
     @media screen and (max-width:768px){
-        top:0vw;
+        top:10vw;
         padding-top: 10;
         padding-bottom: 5vh;
         padding-left: 2vh;
