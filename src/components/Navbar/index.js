@@ -52,6 +52,8 @@ const Navbar = ({ toggle,initializeWallet, isInitialized, account }) => {
                             smooth={true}
                             duration={500}
                             spy={true}
+                            exact='true'
+                            offset={-80}
                             >ABOUT</NavLinks>
                         </NavItem>
                         <NavItem>
@@ -59,13 +61,18 @@ const Navbar = ({ toggle,initializeWallet, isInitialized, account }) => {
                             smooth={true}
                             duration={500}
                             spy={true}
+                            exact='true'
+                            offset={-80}
                             >ROADMAP</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to="team"
                             smooth={true}
                             duration={500}
-                            spy={true}>TEAM</NavLinks>
+                            spy={true}
+                            exact='true'
+                            offset={-80}
+                            >TEAM</NavLinks>
                         </NavItem>
       
                     </NavMenu>

@@ -41,21 +41,16 @@ const HeroSection = () => {
                                 </InfoRow>
                                
 
-                                <InfoP>5000 Apes from the past lost in the present.
-                                       Forever wandering in the Ethereum blockchain
-                                </InfoP>
-
-                                <InfoP>RETRO APE CLUB
+                                <InfoP>Retro Ape Club was founded by a small team that connected through their love for NFTs. 
+                                    The artist is from the creative mind of Jet_i_am, A Kaiju Kingz holder and an active community member. 
+                                    He is the current artist that worked on the 1/1 non-pixelated version
+                                    of Project Godjira Genesis and will be on the team for Project Godjira Gen 2. 
                                 </InfoP>
 
                                 <InfoP>
-                                Was born from the creative mind of Jet_i_am, A Kaiju Kingz holder and an active
-                                community member and current artist for 1/1 unpixelated version for
-                                Project Godjira and Project Godjira Gen 2. The collection will be a 
-                                total of 5000 Retro Apes that puts emphasis on a greyscale theme for its art
-                                highlighting the retro black and white days instead of the
-                                usual norm and aims to give back to the community
-                                for every sales milestone that is reached. 
+                                This collection will be a total of 5000 Retro Apes that puts emphasis on a greyscale theme. 
+                                The art highlights the retro era with inspiration from the 70s and 80s. 
+                                The team aims to give back to the community for every Sales Milestone that is reached. 
                                 </InfoP>
                                 
                                 <InfoP>

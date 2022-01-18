@@ -48,7 +48,7 @@ function TeamSection() {
                                             <FlexboxTeamContent>
                                                 <ImgLogo src={toman}></ImgLogo>
                                                 <TeamH2>Toman</TeamH2>
-                                                <TeamP>Marketing</TeamP>
+                                                <TeamP>Marketing / Community Manager</TeamP>
                                             </FlexboxTeamContent>
 
                                             <FlexboxTeamContent>
