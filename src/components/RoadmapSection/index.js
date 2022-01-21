@@ -61,9 +61,7 @@ const RoadmapSection = () => {
                                 <ImgLogo src={r4} to="/"></ImgLogo>
                                 <ImgLogo src={r5} to="/"></ImgLogo>
                                 <ImgLogo src={r6} to="/"></ImgLogo>
-                                <ImgLogo src={r7} to="/"></ImgLogo>
-                                <ImgLogo src={r8} to="/"></ImgLogo>
-
+                                
                             </Column2Wrapper>
                         </Column2>              
                 </HeroRow>

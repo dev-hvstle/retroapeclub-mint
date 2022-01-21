@@ -87,7 +87,7 @@ export const HeroRow = styled.div`
 
 export const Column1 = styled.div`
     
-    padding: 0 25px;
+    padding: 0;
     padding-right: 5vh;
     padding-left: 5vh;
     grid-area: col1;
@@ -98,7 +98,7 @@ export const Column1 = styled.div`
         display: flex;
         justify-content: center;
         padding-right: 5vh;
-    padding-left: 5vh;
+        padding-left: 5vh;
         
     }
 
@@ -131,9 +131,8 @@ export const HeroContent = styled.div`
     z-index: 3;
     max-width: 1200px;
     position: absolute;
-    
     padding: 2vh;
-    padding-top: 10vh;
+    padding-top: 0vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -200,51 +199,12 @@ export const HeroContent = styled.div`
     }
 `;
 
-export const HeroH1 = styled.h1`
-    color: #fff;
-    font-size: 5vh;
-    text-align: left;
-    font-family: rr;
-    letter-spacing: 1.1vh;
-    line-height: 6.5vh;
-    padding-bottom:1.5vh;
-    
-    padding-left: 1vh;
-    
-
-    @media screen and (max-width:1280px){
-       
-    }
-
-    @media screen and (max-width:1024px){
-        font-size: 3.5vh;
-    }
-
-    
-    @media screen and (max-width: 820px){
-        font-size: 4vh;
-        text-align: center;
-    }
-
-
-    @media screen and (max-width: 768px){
-        font-size: 3vh;
-        text-align: center;
-        line-height: 3.5vh;
-    }
-
-    @media screen and (max-width: 480px){
-        font-size: 3vh;
-        text-align: center;
-    }
-`;
-
 export const HeroP = styled.p`
 
     color: #fff;
     font-size: 20px;
-    text-align: left;
-    padding-bottom:2vh;
+    text-align: center;
+
     font-family: para;
     letter-spacing: .3vh;
 
@@ -286,7 +246,7 @@ export const HeroImgWrapper = styled.div`
 `;
 
 export const HeroImg = styled.img`
-    width: 90vh;
+    width: 60vh;
     border-radius: 20px;
 
     @media screen and (max-width: 1024px){
@@ -363,6 +323,28 @@ export const ButtonMint = styled.img`
     align-items: center;
 `;
 
+
+
+export const ImgLogo = styled.img`
+    display: flex;
+    justify-content: center;
+    width: 50vh;
+    
+
+    @media screen and (max-width: 1024px){
+      
+        width: 70vh;
+    }
+
+    @media screen and (max-width: 768px){
+        padding-top: 0vh;
+        width: 60vh;
+    }
+
+    @media screen and (max-width: 480px){
+        width: 40vh;
+    }
+`;
 
 
 

@@ -10,14 +10,15 @@ import { HeroContainer, HeroBg,VideoBg,
         Column2Wrapper, 
         ButtonWrap,
         ImgBg,
-        HeroP
+        HeroP,
+        ImgLogo
         } from './HeroElements'
-import bg from '../Image/bg.jpg';
+import bg from '../Image/bg.png';
 import { TextField } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core';
-import Image from '../Image/astronaut.png';
+import Image from '../Image/herosection.gif';
 import './HeroElements.css'
-import MintBtn from '../Image/btnMint.png'
+import retro from './../Image/retro.png'
 
 
 
@@ -128,8 +129,7 @@ const HeroSection = ({token, totalSupply, account, mintList, reservedList}) => {
                 <HeroRow>
                         <Column1>
                             <HeroImgWrapper>
-                                <HeroH1>Ape in to the Retro Ape Club</HeroH1>
-                                <HeroP>PUBLIC SALE NOW ACTIVE</HeroP>
+                                <ImgLogo src={retro}></ImgLogo>
                                 <HeroP>5000 UNIQUE NFT</HeroP>
                                 <HeroP>PRICE 0.04 ETH</HeroP>
                             
