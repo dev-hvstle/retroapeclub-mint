@@ -125,6 +125,24 @@ export const Column2 = styled.div`
     padding-top:0vh;
     grid-area: col2;
 
+    @media screen and (max-width: 1024px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    @media screen and (max-width: 768px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    @media screen and (max-width: 460px){
+        padding:5vh;
+    }
+
     
 `;
 
@@ -230,41 +248,50 @@ export const HeroImgWrapper = styled.div`
     align-content: space-between;
 
     @media screen and (max-width: 787px){
-        max-width: 350px;
+
         padding-right: 0vh;
         padding-left: 0vh;
     }
 
     @media screen and (max-width: 768px){
-        max-width: 350px;
+
         padding-right: 0vh;
         padding-left: 0vh;
     }
 
     @media screen and (max-width: 460px){
-        max-width: 350px;
+
 
         padding-right: 0vh;
-    padding-left: 0vh;
+        padding-left: 0vh;
     }
     
 `;
 
 export const HeroImg = styled.img`
     width: 60vh;
-    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @media screen and (max-width: 1024px){
-        padding-top: 13vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 50vh;
     }
 
     @media screen and (max-width: 768px){
-        padding-top: 0vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 50vh;
     }
 
     @media screen and (max-width: 480px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 40vh;
     }
 `;
@@ -273,12 +300,26 @@ export const Column2Wrapper = styled.div`
     max-width: 600px;
     height: 50vh;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding-top: 0vh;
     padding-bottom: 5vh;
     padding-left: 5vh;
     padding-right: 5vh;
+
+    @media screen and (max-width: 1024px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    @media screen and (max-width: 768px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
 
     @media screen and (max-width: 460px){
         padding:5vh;
@@ -350,7 +391,7 @@ export const ImgLogo = styled.img`
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 0vh;
+        padding-top: 5vh;
         padding-left: 2vh;
         padding-right: 2vh;
         width: 60vh;
