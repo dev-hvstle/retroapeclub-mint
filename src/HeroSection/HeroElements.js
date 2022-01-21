@@ -442,7 +442,7 @@ export const FlexboxContainer = styled.div`
     @media screen and (max-width: 1024px){
        
        flex-wrap: wrap;
-       justify-content: space-around;
+       justify-content: center;
        align-items: center;
        align-content: space-between;
   
@@ -451,7 +451,7 @@ export const FlexboxContainer = styled.div`
     @media screen and (max-width: 768px){
        
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         align-content: space-between;
    
@@ -459,7 +459,7 @@ export const FlexboxContainer = styled.div`
 
     @media screen and (max-width: 468px){
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         align-content: space-between;
     }
