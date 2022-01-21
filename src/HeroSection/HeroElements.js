@@ -131,9 +131,9 @@ export const HeroContent = styled.div`
     z-index: 3;
     max-width: 1200px;
     position: absolute;
-    top:15vh;
-    padding-top: 10;
+    
     padding: 2vh;
+    padding-top: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,8 +161,8 @@ export const HeroContent = styled.div`
     }
 
     @media screen and (max-width:820px){
-        top:10vw;
-        padding-top: 10;
+        
+        padding-top: 10vh;
         padding-bottom: 5vh;
         padding-left: 5vh;
         padding-right: 5vh; 
@@ -185,8 +185,7 @@ export const HeroContent = styled.div`
     }
 
     @media screen and (max-width:468px){
-        top:10vw;
-        padding-top: 1vh;
+        padding-top: 10vh;
         padding-bottom: 5vh;
         padding-left: 2vh;
         padding-right: 2vh;

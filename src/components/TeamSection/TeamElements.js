@@ -13,7 +13,7 @@ export const TeamContainer = styled.div`
     padding: 0 0px;
     height: auto;
     position: relative;
-    top:109vh;
+    top:100vh;
     z-index: 1;
     align-items: center;
 

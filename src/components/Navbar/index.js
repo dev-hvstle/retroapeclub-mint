@@ -74,6 +74,16 @@ const Navbar = ({ toggle,initializeWallet, isInitialized, account }) => {
                             offset={-80}
                             >TEAM</NavLinks>
                         </NavItem>
+
+                        <NavItem>
+                            
+                        <ButtonWrap>
+                             
+                            <button className='btnConnect' onClick={initializeWallet}>{(isInitialized ? sanitizedAddress : account)}</button>
+                         
+                        </ButtonWrap>
+                     
+                        </NavItem>
       
                     </NavMenu>
                     <NavBtnContainer>
@@ -89,19 +99,12 @@ const Navbar = ({ toggle,initializeWallet, isInitialized, account }) => {
                             
                         </ImgWrap>
 
-                        <ImgWrap href="https://discord.gg/SwVvNY8ru4" rel="noopener">
+                        <ImgWrap href="https://discord.gg/retroapeclub" rel="noopener">
                         
                             <ImgLogo src={discord}></ImgLogo>
                             
                         </ImgWrap>
                    
-                        <ButtonWrap>
-                         
-                            
-                            <button className='btnConnect' onClick={initializeWallet}>{(isInitialized ? sanitizedAddress : account)}</button>
-                            
-                        </ButtonWrap>
-                        
                     </NavBtnContainer>
 
                 </NavbarContainer>

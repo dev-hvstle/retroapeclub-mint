@@ -189,7 +189,7 @@ export const HeroContent = styled.div`
     z-index: 3;
     max-width: 1200px;
     position: absolute;
-    top:10vh;
+    top:0vh;
     padding-top: 10vh;
     padding-bottom: 5vh;
     padding-left: 0vh;
@@ -427,7 +427,7 @@ export const InfoH1 = styled.h1`
 export const InfoP = styled.p`
 
     color: #fff;
-    font-size: 1.6vh;
+    font-size: 2vh;
     text-align: justify;
     padding-bottom:2vh;
     font-family: para;

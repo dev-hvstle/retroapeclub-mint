@@ -42,7 +42,7 @@ export const NavbarContainer = styled.div`
     z-index: 1;
     width: 100%;
     padding: 0 0;
-    max-width: 1300px;
+    max-width: 1200px;
 
 `;
 
@@ -185,9 +185,6 @@ export const NavLinks = styled(LinkS)`
     cursor: pointer;
     font-family: gidole;    
     
-    &.active{
-        border-bottom: 3px solid #01bf71;
-    }
 `;
 
 
@@ -238,7 +235,8 @@ export const ButtonWrap = styled.div`
     justify-content: flex-start;
     width: auto;
     height: 0%;
-    padding-bottom: 5vh;
+    padding-top: 2vh;
+    
 
 
     @media screen and (max-width: 1024px){

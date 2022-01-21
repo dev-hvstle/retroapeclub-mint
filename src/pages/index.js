@@ -8,6 +8,8 @@ import InfoSection from '../components/InfoSection';
 import RoadmapSection from '../components/RoadmapSection';
 import TeamSection from '../components/TeamSection';
 import FooterSection from '../components/FooterSection';
+import bgMusic from '../music/loop.mp3';
+import silentMusic from '../music/silence.mp3';
  
 const Home = () => {
 
@@ -19,7 +21,7 @@ const Home = () => {
     var [mintList, setMintList] = useState([]);
     var [reservedList, setReservedList] = useState([]);
     const web3 = new Web3(window.ethereum);
-    const tokenAddress = "0x795B8A33dD1507aAC8766E882F32aC5cfc1A3329";
+    const tokenAddress = "0x96b006802f2971B9580d58d8B871Deb04b78364b";
 
     const initializeWallet = async () =>{
       if(typeof window.ethereum !== 'undefined'){
@@ -31,13 +33,9 @@ const Home = () => {
           if(tempAccount !== ''){
               setInitialized(true);
           }
-          if(chainId !== 1){
-              window.alert("Please Change to Ethereum Main Network!");
-          }
+          
       }
-      else{
-          window.alert("Browser does not have Metamask or it doesn't support Web3!");
-      }
+
   }
 
   const loadContract = async() =>{
@@ -80,23 +78,23 @@ const Home = () => {
                 window.location.reload();
             });
         }
-        else{
-            window.alert("Browser does not have Metamask or it doesn't support Web3!");
-        }
+
     }
 
 
 
     return (
         <>
-
+          <audio autoPlay loop>
+            <source src={bgMusic} type='audio/mp3'></source>
+          </audio>
           <Sidebar toggle={toggle} isOpen={isOpen} initializeWallet={initializeWallet} isInitialized={isInitialized} account={account}/>
           <Navbar toggle={toggle} initializeWallet={initializeWallet} isInitialized={isInitialized} account={account}/>
           <HeroSection token={token} account={account}/>
           <InfoSection />
           <RoadmapSection />
           <TeamSection />
-          <FooterSection />       
+          <FooterSection />
         </>
     )
 }

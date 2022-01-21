@@ -129,7 +129,7 @@ const HeroSection = ({token, totalSupply, account, mintList, reservedList}) => {
                         <Column1>
                             <HeroImgWrapper>
                                 <HeroH1>Ape in to the Retro Ape Club</HeroH1>
-                                <HeroP>WHITELIST SALE NOW ACTIVE</HeroP>
+                                <HeroP>PUBLIC SALE NOW ACTIVE</HeroP>
                                 <HeroP>5000 UNIQUE NFT</HeroP>
                                 <HeroP>PRICE 0.04 ETH</HeroP>
                             

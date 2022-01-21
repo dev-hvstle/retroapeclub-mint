@@ -46,18 +46,18 @@ const Footer = () => {
                             <WebsiteRights>Retro Ape Club © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
 
                             <SocialIcons>
-                                <SocialIconLink href="/" target="_blank" 
+                                <SocialIconLink href="https://discord.gg/retroapeclub" target="_blank" 
                                 aria-label="Discord">
                                     <ImgSocialLogo src={discord}></ImgSocialLogo>
                                 </SocialIconLink>
 
-                                <SocialIconLink href="/" target="_blank" 
+                                <SocialIconLink href="https://twitter.com/Retro_Ape_Club" target="_blank" 
                                 aria-label="Twitter">
                                     <ImgSocialLogo src={twitter}></ImgSocialLogo>
                                 </SocialIconLink>
 
                                 <SocialIconLink href="/" target="_blank" 
-                                aria-label="Facebook">
+                                aria-label="Opensea">
                                     <ImgSocialLogo src={opensea}></ImgSocialLogo>
                                 </SocialIconLink>
                             </SocialIcons>

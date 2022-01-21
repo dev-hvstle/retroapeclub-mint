@@ -4,7 +4,7 @@ import gidole from '../../fonts/Gidole.otf'
 
 export const FooterContainer = styled.footer`
     position: relative;
-    top:255vh;
+    top:240vh;
     z-index: 100;
     background-color: #101522;
 

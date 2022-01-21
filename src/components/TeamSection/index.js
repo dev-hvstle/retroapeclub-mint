@@ -60,23 +60,7 @@ function TeamSection() {
 
                                 </TeamImgWrapper>
                             </Column1>
-                        </TeamRow>
-
-                        
-
-
-                    
-
-                        
-
-
-                       
-                     
-
-
-             
-                   
-                
+                        </TeamRow>                
             </TeamContent>
         </TeamContainer>
     )
