@@ -139,8 +139,7 @@ export const HeroRow = styled.div`
 `;
 
 export const Column1 = styled.div`
-    margin-bottom: 30px;
-    padding:1vh;
+
     padding-top:0vh;
     grid-area: col1;
 
@@ -190,10 +189,10 @@ export const HeroContent = styled.div`
     max-width: 1200px;
     position: absolute;
     top:0vh;
-    padding-top: 10vh;
+    padding-top: 5vh;
     padding-bottom: 5vh;
     padding-left: 0vh;
-    padding-right: 5vh;
+    padding-right: 0vh;
     display: flex;
     -o-object-fit: cover;
     object-fit: cover;
@@ -201,24 +200,24 @@ export const HeroContent = styled.div`
     justify-content: center;
 
     @media screen and (max-width:1024px){
-        top:5vh;
-        padding-top: 1vh;
+      
+        padding-top: 5vh;
         padding-bottom: 5vh;
         padding-left: 2vh;
         padding-right: 2vh;
     }
 
     @media screen and (max-width:768px){
-        top:10vh;
-        padding-top: 1vh;
+
+        padding-top: 5vh;
         padding-bottom: 5vh;
         padding-left: 2vh;
         padding-right: 2vh;
     }
 
     @media screen and (max-width:468px){
-        top:20vh;
-        padding-top: 1vh;
+    
+        padding-top: 5vh;
         padding-bottom: 5vh;
         padding-left: 2vh;
         padding-right: 2vh;
@@ -281,24 +280,24 @@ export const HeroImgWrapper = styled.div`
 
 export const HeroImg = styled.img`
     width: 60vh;
-    padding: 5vh;
+    padding:2vh;
    
 
     @media screen and (max-width:1024px){
         
         width: 45vh;
-        padding: 5vh;
-        padding-top: 7vh;
+        padding:2vh;
+        
     }
 
     @media screen and (max-width:768px){
-        width: 60vh;
-        padding: 5vh;
+        width: 40vh;
+        padding:2vh;
     }
 
     @media screen and (max-width:460px){
-        width: 50vh;
-        padding: 5vh;
+        width: 35vh;
+        padding:2vh;
     }
 `;
 
@@ -428,7 +427,7 @@ export const InfoP = styled.p`
 
     color: #fff;
     font-size: 2vh;
-    text-align: justify;
+    text-align: left;
     padding-bottom:2vh;
     font-family: para;
     letter-spacing: .3vh;
@@ -438,20 +437,20 @@ export const InfoP = styled.p`
     padding-bottom:0vh;
 
     @media screen and (max-width: 1024px){
-        font-size: 1vh;
-        text-align: justify;
+        font-size: 2vh;
+        text-align: center;
         
     }
 
 
     @media screen and (max-width: 768px){
-        font-size: 1vh;
+        font-size: 2vh;
        
         text-align: center;
     }
 
     @media screen and (max-width: 480px){
-        font-size: 1.4vh;
+        font-size: 2vh;
         text-align: center;
     }
     
