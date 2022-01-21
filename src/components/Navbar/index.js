@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, Fragment } from 'react'
 
 import {FaBars} from 'react-icons/fa' 
 import './NavbarElements.css';
@@ -35,12 +35,40 @@ const Navbar = ({ toggle,initializeWallet, isInitialized, account }) => {
     const patt = /^[a-zA-Z0-9]{10}/;
     const sanitizedAddress = account.match(patt);
 
+
+    const [colorChange, setColorchange] = useState(false);
+    const changeNavbarColor = () =>{
+        if(window.scrollY >= 900){
+        setColorchange(true);
+        }
+        else{
+        setColorchange(false);
+        }
+    };
+    window.addEventListener('scroll', changeNavbarColor);
+
     return (
-        <>
-            <Nav>
+        <Fragment>
+            <Nav className={colorChange ? 'navbar colorChange' : 'navbar'}>
                 <NavbarContainer>
                     <NavLogo to="/">
-                        <RetroLogo src={Logo}></RetroLogo>
+                    <ImgWrap>
+                        
+                        <ImgLogo src={opensea} to="/"></ImgLogo>
+
+                    </ImgWrap>
+
+                    <ImgWrap href="https://twitter.com/Retro_Ape_Club" rel="noopener">
+                    
+                        <ImgLogo src={twitter}></ImgLogo>
+                        
+                    </ImgWrap>
+
+                    <ImgWrap href="https://discord.gg/retroapeclub" rel="noopener">
+                    
+                        <ImgLogo src={discord}></ImgLogo>
+                        
+                    </ImgWrap>
                     </NavLogo>
 
                     <MobileIcon onClick={toggle}>
@@ -48,7 +76,7 @@ const Navbar = ({ toggle,initializeWallet, isInitialized, account }) => {
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to="about"
+                            <NavLinks to="about" className='about'
                             smooth={true}
                             duration={500}
                             spy={true}
@@ -57,7 +85,7 @@ const Navbar = ({ toggle,initializeWallet, isInitialized, account }) => {
                             >ABOUT</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="roadmap"
+                            <NavLinks to="roadmap" className='roadmap'
                             smooth={true}
                             duration={500}
                             spy={true}
@@ -66,8 +94,9 @@ const Navbar = ({ toggle,initializeWallet, isInitialized, account }) => {
                             >ROADMAP</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="team"
+                            <NavLinks to="team" className='about'
                             smooth={true}
+                            color='#fff'
                             duration={500}
                             spy={true}
                             exact='true'
@@ -77,39 +106,23 @@ const Navbar = ({ toggle,initializeWallet, isInitialized, account }) => {
 
                         <NavItem>
                             
-                        <ButtonWrap>
-                             
-                            <button className='btnConnect' onClick={initializeWallet}>{(isInitialized ? sanitizedAddress : account)}</button>
-                         
-                        </ButtonWrap>
+                        
                      
                         </NavItem>
       
                     </NavMenu>
                     <NavBtnContainer>
-                        <ImgWrap>
-                        
-                            <ImgLogo src={opensea} to="/"></ImgLogo>
-
-                        </ImgWrap>
-
-                        <ImgWrap href="https://twitter.com/Retro_Ape_Club" rel="noopener">
-                        
-                            <ImgLogo src={twitter}></ImgLogo>
-                            
-                        </ImgWrap>
-
-                        <ImgWrap href="https://discord.gg/retroapeclub" rel="noopener">
-                        
-                            <ImgLogo src={discord}></ImgLogo>
-                            
-                        </ImgWrap>
+                    <ButtonWrap>
+                             
+                            <button className='btnNavbar' onClick={initializeWallet}>{(isInitialized ? sanitizedAddress : account)}</button>
+                         
+                        </ButtonWrap>
                    
                     </NavBtnContainer>
 
                 </NavbarContainer>
             </Nav>
-        </>
+        </Fragment>
     )
 }
 

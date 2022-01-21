@@ -10,6 +10,7 @@ import TeamSection from '../components/TeamSection';
 import FooterSection from '../components/FooterSection';
 import bgMusic from '../music/loop.mp3';
 import silentMusic from '../music/silence.mp3';
+import MainSection from '../components/MainSection';
  
 const Home = () => {
 
@@ -90,6 +91,7 @@ const Home = () => {
           </audio>
           <Sidebar toggle={toggle} isOpen={isOpen} initializeWallet={initializeWallet} isInitialized={isInitialized} account={account}/>
           <Navbar toggle={toggle} initializeWallet={initializeWallet} isInitialized={isInitialized} account={account}/>
+          <MainSection />
           <HeroSection token={token} account={account}/>
           <InfoSection />
           <RoadmapSection />

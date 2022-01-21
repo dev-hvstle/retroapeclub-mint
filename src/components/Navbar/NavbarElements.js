@@ -2,12 +2,13 @@ import styled from 'styled-components';
 import { Link as LinkR} from 'react-router-dom';
 import { Link as LinkS} from 'react-scroll';
 import pirulen from '../../fonts/roadrage.otf'
-import gidole from '../../fonts/Gidole.otf'
+
+import tom from '../../fonts/Tomorrow-Light.ttf'
 
 
 
 export const Nav = styled.nav`
-    background: #0f1923;
+    background: trans;
     height: 80px;
     /* margin-top: --80px; */
     display: flex;
@@ -25,11 +26,13 @@ export const Nav = styled.nav`
     src: url(${pirulen});
     }   
 
-    @font-face {
-        font-family: gidole;
-        src: url(${gidole});
-    }
+ 
     
+    @font-face {
+        font-family: tom;
+        src: url(${tom});
+    }
+
     @media screen and (max-width: 960px){
         transition: 0.8s all ease;
     }
@@ -150,7 +153,7 @@ export const NavMenu = styled.ul`
     text-align: center;
     margin-left: 50vh;
     padding-right: 5vh;
-    font-family: gidole;
+    font-family: tom;
 
     @media screen and (max-width: 1334px){
         display: none;
@@ -168,7 +171,7 @@ export const NavMenu = styled.ul`
 export const NavItem = styled.li`
     font-size: 1.5vh;
     height: 80px;
-    font-family: gidole;
+    font-family: tom;
     
 
 `;
@@ -176,14 +179,15 @@ export const NavItem = styled.li`
 
 export const NavLinks = styled(LinkS)`
 
-    color: #fff;
+   
     display: flex;
     align-items: center;
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
-    font-family: gidole;    
+    font-family: tom;
+    font-weight: 900;
     
 `;
 
@@ -232,10 +236,13 @@ export const NavBtn = styled.button`
 
 export const ButtonWrap = styled.div`
     display: flex;
-    justify-content: flex-start;
-    width: auto;
+    justify-content: center;
+    align-items: center;
+  
+  
     height: 0%;
-    padding-top: 2vh;
+  
+    font-size: 1vh;
     
 
 
@@ -247,7 +254,7 @@ export const ButtonWrap = styled.div`
         padding-right: 2vh;
         height: 5%;
         width: 50vw;
-         padding-right: 0vh;
+        padding-right: 0vh;
     }
     
     @media screen and (max-width: 468px){
