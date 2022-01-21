@@ -11,7 +11,7 @@ export const HeroContainer = styled.div`
     display: flex;
     justify-content: center;
     padding: 0 30px;
-    height: 850px;
+    height: 100vh;
     position: relative;
     z-index: 1;
     align-items: center;
@@ -41,7 +41,7 @@ export const HeroContainer = styled.div`
     }
 
     @media screen and (min-width: 768px){
-        height: 900px;
+        height: 100vh;
     }
 
 `
@@ -53,14 +53,24 @@ export const HeroBg = styled.div`
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 120vh;
     overflow: hidden;
-   
-
+    
+    
     @media screen and (max-width: 768px){
-        height:100%;
-
+        height: 150vh;
+       
+        
+        
     }
+
+    @media screen and (max-width: 460px){
+        height: 160vh;
+        top:0vh;
+        
+    }
+
+ 
 `
 
 

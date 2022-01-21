@@ -202,6 +202,7 @@ export const MainH1 = styled(LinkS)`
     color: yellow;
     font-family: tom;
     cursor: pointer;
+    text-align: center;
 `
 
 
