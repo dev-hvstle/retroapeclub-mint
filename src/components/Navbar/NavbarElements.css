@@ -36,11 +36,11 @@
 
 .navbar{
   background-color: transparent;
-  visibility: hidden;
+
 }
 
 .navbar.colorChange{
   background-color: #0f1923;
-  visibility: visible;
+
   transition: all 0.4s ease-in-out;
 }

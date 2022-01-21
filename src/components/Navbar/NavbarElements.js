@@ -45,7 +45,11 @@ export const NavbarContainer = styled.div`
     z-index: 1;
     width: 100%;
     padding: 0 0;
-    max-width: 1200px;
+    max-width: 1600px;
+
+    @media screen and (max-width:1820px){
+        max-width: 1300px;
+    }
 
 `;
 
@@ -54,11 +58,14 @@ export const NavLogo = styled(LinkR)`
     justify-self: flex-start;
     cursor: pointer;
     font-size: 2vh;
+    height: 10vh;
     display: flex;
     align-items: center;
     margin-left: 0px;
     font-weight: bold;
     text-decoration: none;
+   
+
 `;
 
 export const ImgLogo = styled.img`
@@ -77,6 +84,29 @@ export const ImgLogo = styled.img`
         margin-right: 4vw !important;
         height: 20%;
         width: auto;
+    }
+`;
+
+export const ImgLogoRetro = styled.img`
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    width: auto;
+
+
+    @media screen and (max-width:1024){
+        height: 70%;
+        
+        width: auto;
+    }
+
+    @media screen and (max-width: 460px){
+        display: flex;
+        align-items: center;
+        height: 15vh;
+        width: auto;
+    
+        padding-top: 1.8vh;
     }
 `;
 
@@ -148,10 +178,11 @@ export const MobileIcon = styled.div`
 export const NavMenu = styled.ul`
 
     display: flex;
-    align-items: right;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     text-align: center;
-    margin-left: 50vh;
+    margin-left: 30vh;
     padding-right: 5vh;
     font-family: tom;
 
@@ -172,6 +203,8 @@ export const NavItem = styled.li`
     font-size: 1.5vh;
     height: 80px;
     font-family: tom;
+    display: flex;
+    justify-content: center;
     
 
 `;
@@ -185,6 +218,7 @@ export const NavLinks = styled(LinkS)`
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
+    font-size: 2vh;
     cursor: pointer;
     font-family: tom;
     font-weight: 900;

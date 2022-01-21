@@ -18,6 +18,7 @@ import {
     NavMenu,
     NavItem,
     NavLinks,
+    ImgLogoRetro,
     NavBtn,
     RetroLogo,
     ImgWrap,
@@ -38,7 +39,7 @@ const Navbar = ({ toggle,initializeWallet, isInitialized, account }) => {
 
     const [colorChange, setColorchange] = useState(false);
     const changeNavbarColor = () =>{
-        if(window.scrollY >= 900){
+        if(window.scrollY >= 80){
         setColorchange(true);
         }
         else{
@@ -51,24 +52,8 @@ const Navbar = ({ toggle,initializeWallet, isInitialized, account }) => {
         <Fragment>
             <Nav className={colorChange ? 'navbar colorChange' : 'navbar'}>
                 <NavbarContainer>
-                    <NavLogo to="/">
-                    <ImgWrap>
-                        
-                        <ImgLogo src={opensea} to="/"></ImgLogo>
-
-                    </ImgWrap>
-
-                    <ImgWrap href="https://twitter.com/Retro_Ape_Club" rel="noopener">
-                    
-                        <ImgLogo src={twitter}></ImgLogo>
-                        
-                    </ImgWrap>
-
-                    <ImgWrap href="https://discord.gg/retroapeclub" rel="noopener">
-                    
-                        <ImgLogo src={discord}></ImgLogo>
-                        
-                    </ImgWrap>
+                    <NavLogo to="/" >
+                        <ImgLogoRetro src={Logo}/>
                     </NavLogo>
 
                     <MobileIcon onClick={toggle}>
@@ -109,9 +94,28 @@ const Navbar = ({ toggle,initializeWallet, isInitialized, account }) => {
                         
                      
                         </NavItem>
+
+                        
       
                     </NavMenu>
                     <NavBtnContainer>
+                    <ImgWrap>
+                        
+                        <ImgLogo src={opensea} to="/"></ImgLogo>
+
+                    </ImgWrap>
+
+                    <ImgWrap href="https://twitter.com/Retro_Ape_Club" rel="noopener">
+                    
+                        <ImgLogo src={twitter}></ImgLogo>
+                        
+                    </ImgWrap>
+
+                    <ImgWrap href="https://discord.gg/retroapeclub" rel="noopener">
+                    
+                        <ImgLogo src={discord}></ImgLogo>
+                        
+                    </ImgWrap>
                     <ButtonWrap>
                              
                             <button className='btnNavbar' onClick={initializeWallet}>{(isInitialized ? sanitizedAddress : account)}</button>

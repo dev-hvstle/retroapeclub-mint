@@ -114,21 +114,23 @@ text-decoration: none;
 export const ImgLogo = styled.img`
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 80%;
+    height: 10vh;
     width: auto;
-    margin-right: 1vw;
+
 
     @media screen and (max-width:1024){
-        height: 60%;
+        height: 70%;
         
         width: auto;
     }
 
     @media screen and (max-width: 460px){
-        margin-right: 4vw !important;
-        height: 30%;
+        display: flex;
+        align-items: center;
+        height: 10vh;
         width: auto;
+        padding-bottom: 5vh;
+      
     }
 `;
 

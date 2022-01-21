@@ -118,7 +118,7 @@ const HeroSection = ({token, totalSupply, account, mintList, reservedList}) => {
     }
 
     return (
-        <HeroContainer>
+        <HeroContainer id="hero">
             <HeroBg>
                 <ImgBg src={bg}></ImgBg>
               
