@@ -15,8 +15,9 @@ import { HeroContainer, HeroBg,VideoBg,
         ImgBg,
    
         } from '../InfoSection/InfoElements'
-        import bg from '../../Image/bgblack.jpg';
-        import Image from '../../Image/apeman.gif';
+       
+        import Image from '../../Image/robotto.png';
+        import bg from '../../Image/3rdpanel.png';
 
 
 

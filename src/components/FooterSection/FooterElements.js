@@ -4,7 +4,7 @@ import gidole from '../../fonts/Gidole.otf'
 
 export const FooterContainer = styled.footer`
     position: relative;
-    top:240vh;
+    top:100vh;
     z-index: 100;
     background-color: #101522;
 
@@ -13,35 +13,32 @@ export const FooterContainer = styled.footer`
         src: url({gidole});
     }
 
-    @media screen and (max-width:1660px){
-        top:245vh;
+    @media screen and (max-width:1770px){
+        top:88vh;
     }
 
     @media screen and (max-width:1020px){
-        top:355vh;
+        top:235vh;
     }
 
-    @media screen and (max-width:820px){
-        top:366vh;
-    }
 
     @media screen and (max-width:768px){
-        top:449vh;
+        top:235vh;
         padding-bottom: 5vh;
     }
 
 
     @media screen and (max-width:540px){
-        top:440vh;
+        top:300vh;
      
     }
 
     @media screen and (max-width:468px){
-        top:460vh;
+        top:300vh;
     }
 
     @media screen and (max-width:375px){
-        top:440vh;
+        top:290vh;
     }
 `
 

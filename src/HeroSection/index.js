@@ -15,7 +15,10 @@ import { HeroContainer, HeroBg,VideoBg,
         Input,
         FlexboxContainer,
         FlexboxContent1,
-        FlexboxContent2
+        FlexboxContent2,
+        FlexboxContent1P,
+        FlexboxContent2P,
+        HeroP1
         } from './HeroElements'
 import bg from '../Image/bg.png';
 import { TextField } from '@material-ui/core';
@@ -134,8 +137,17 @@ const HeroSection = ({token, totalSupply, account, mintList, reservedList}) => {
                         <Column1>
                             <HeroImgWrapper>
                                 <ImgLogo src={retro}></ImgLogo>
+                                <FlexboxContainer>
+                                    <FlexboxContent1P>
+                                        5000
+                                    </FlexboxContent1P>
+
+                                    <FlexboxContent2P>
+                                        <HeroP>UNIQUE NFT</HeroP>
+                                    </FlexboxContent2P>
+                                </FlexboxContainer>
                                 
-                                <HeroP>5000 UNIQUE NFT</HeroP>
+                                
                                 <HeroP>PRICE 0.04 ETH</HeroP>
                                 <FlexboxContainer>
                                     <FlexboxContent1>

@@ -244,10 +244,30 @@ export const HeroP = styled.p`
 
     @media screen and (max-width: 480px){
         font-size: 20px;
+        text-align: center;
     }
     
 
 `;
+
+export const HeroP1 = styled.p`
+
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: .3vh;
+    font-family: para;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+
+    @media screen and (max-width: 768px){
+        font-size: 20px;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 480px){
+        font-size: 20px;
+    }
+
+`
 
 export const HeroImgWrapper = styled.div`
     max-width: auto;
@@ -479,6 +499,10 @@ export const FlexboxContent1 = styled.div`
         padding-left: 5vh;
     }
 
+    @media screen and (max-width:375px){
+        padding-left: 5vh;
+    }
+
 `
 
 export const FlexboxContent2 = styled.div`
@@ -492,3 +516,39 @@ export const FlexboxContent2 = styled.div`
 
 `
 
+
+
+export const FlexboxContent1P = styled.div`
+    display: flex;
+    align-items: center;
+    padding: 0vh;
+    color: #fff;
+    font-family: para;
+ 
+    font-size: 20px;
+    text-align: center;
+    
+    font-family: para;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+    
+    @media screen and (max-width:460px){
+        padding-left: 5vh;
+    }
+
+    @media screen and (max-width:375px){
+        padding-left: 5vh;
+    }
+
+`
+
+export const FlexboxContent2P = styled.div`
+    display: flex;
+    align-items: center;
+    padding: 0vh;
+    padding-left: .5vh;
+    
+    @media screen and (max-width:460px){
+        padding-right: 5vh;
+    }
+
+`

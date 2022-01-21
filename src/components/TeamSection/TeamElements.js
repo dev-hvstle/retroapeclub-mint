@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import fofbb from '../../fonts/fofbb_ital.otf';
 import rr from '../../fonts/roadrage.otf';
-import para from '../../fonts/para.otf'
+import para from '../../fonts/Tomorrow-Light.ttf'
 import gidole from '../../fonts/Gidole.otf'
 
 export const TeamContainer = styled.div`
@@ -11,7 +11,7 @@ export const TeamContainer = styled.div`
     display: flex;
     justify-content: center;
     padding: 0 0px;
-    height: auto;
+    height: 100vh;
     position: relative;
     top:100vh;
     z-index: 1;
@@ -19,64 +19,66 @@ export const TeamContainer = styled.div`
 
     @media screen and (max-width: 1700px){
         position: relative;
-        top:100vh;
+        top:90vh;
         
     }
 
     @media screen and (max-width: 1500px){
         position: relative;
-        top:100vh;
+        top:99vh;
         
     }
 
     @media screen and (max-width: 1216px){
         position: relative;
-        top:100vh;
+        top:99vh;
         
     }
 
     @media screen and (max-width: 1024px){
         position: relative;
-        top:100vh;
+        top:99vh;
         
     }
 
  
     @media screen and (max-width: 820px){
         position: relative;
-        top:120vh;
+        top:90vh;
         
         
     }
 
     @media screen and (max-width: 768px){
         position: relative;
-        top:200vh;
+        top:170vh;
+    
         
         
     }
 
     @media screen and (max-width: 540px){
         position: relative;
-        top:190vh;
+        top:170vh;
     
     }
 
     @media screen and (max-width: 468px){
         position: relative;
-        top:210vh;
+        top:170vh;
+  
     
     }
 
     @media screen and (max-width: 390px){
         position: relative;
-        top:207vh;
+        top:165vh;
     
     }
     
     @media screen and (max-width: 375px){
         position: relative;
-        top:180vh;
+        top:150vh;
     
     }
 
@@ -97,16 +99,7 @@ export const TeamContainer = styled.div`
     }
 
      /* Add: before styles */
-     :before{
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(180deg, rgb(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%), linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
-        z-index: 2;
-    }
+  
 
   
 
@@ -119,30 +112,22 @@ export const TeamBg = styled.div`
     right: 0;
     bottom: 0;
     left: 0;
-    width: 100%;
-    height: 150vh;
+    width: auto;
+    height: 100vh;
     overflow: hidden;
 
-
     @media screen and (max-width:1024px){
-        display: block;
-        width: auto;
-        height: 255vh;
-     
-   }
+        height: 250vh;
+    }
 
     @media screen and (max-width:768px){
-        display: block;
-        width: auto;
-        height: 250vh;
-     
-   }
-
-    @media screen and (max-width: 460px){
-        height: 270vh;
-
-        
+        height: 240vh;
     }
+
+    @media screen and (max-width:468px){
+        height: 250vh;
+    }
+   
 
 
 
@@ -173,7 +158,7 @@ export const ImgBg = styled.img`
    @media screen and (max-width:460px){
         display: block;
         width: auto;
-        height: 270vh;
+        height: 320vh;
         
    }
 `;
@@ -181,10 +166,8 @@ export const ImgBg = styled.img`
 
 export const TeamRow = styled.div`
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-right: 5vh;
-    padding-left: 5vh;
+    justify-content: flex-start;
+    width:100%;
   
 
     @media screen and (max-width: 768px){
@@ -243,13 +226,14 @@ export const TeamContent = styled.div`
     top:15vh;
     padding-top: 10;
     padding-bottom: 5vh;
-    padding-left: 0vh;
+    padding-left: 5vh;
     padding-right: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 
-    @media screen and (max-width:1280px){
+    @media screen and (max-width:1220px){
         display: flex;
         align-items: center;
         justify-content: center;
@@ -290,12 +274,12 @@ export const TeamContent = styled.div`
 
 export const TeamH1 = styled.h1`
     color: #fff;
-    font-size: 10vh;
+    font-size: 5vh;
     text-align: center;
-    font-family: rr;
+    font-family: para;
     letter-spacing: 1.1vh;
-    line-height: 1.5vh;
-    padding-bottom:15vh;
+    
+    padding-bottom:5vh;
     
     padding-left: 1vh;
     
@@ -303,40 +287,7 @@ export const TeamH1 = styled.h1`
    
 
     @media screen and (max-width:1024px){
-        font-size: 7vh;
-    }
-
-
-    @media screen and (max-width: 768px){
         font-size: 4vh;
-        text-align: center;
-    }
-
-    @media screen and (max-width: 480px){
-        font-size: 7vh;
-        text-align: center;
-    }
-`;
-
-
-export const TeamH2 = styled.h1`
-    color: #fff;
-    font-size: 4vh;
-    text-align: center;
-    font-family: rr;
-    letter-spacing: 1.1vh;
-    line-height: 6.5vh;
-    padding-top:3vh;
-    padding-bottom:0.5vh;
-   
-    
-
-    @media screen and (max-width:1280px){
-       
-    }
-
-    @media screen and (max-width:1024px){
-        font-size: 3.5vh;
     }
 
 
@@ -352,12 +303,49 @@ export const TeamH2 = styled.h1`
 `;
 
 
+export const TeamH2 = styled.h1`
+    color: #fff;
+    font-size: 3vh;
+    text-align: center;
+    font-family: rr;
+    letter-spacing: 1.1vh;
+    line-height: 6.5vh;
+    padding-top:3vh;
+    padding-bottom:0.5vh;
+   
+    
 
+    @media screen and (max-width:1280px){
+       
+    }
+
+    @media screen and (max-width:1024px){
+        font-size: 3.5vw;
+    }
+
+
+    @media screen and (max-width: 768px){
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 480px){
+        font-size: 2vh;
+        text-align: center;
+    }
+`;
+
+
+export const TitleContainer = styled.div`
+
+    height: 30vh;
+
+`
 
 
 
 export const TeamImgWrapper = styled.div`
-    max-width: 30vh;
+    max-width: 50vh;
     height: 100%;
     
 `;
@@ -405,10 +393,34 @@ export const ImgLogo = styled.img`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 35vh;
-    width: auto;
-    padding: 0vh;
+    height: 20vw;
+    width: 20vw;
+    padding: 2vh;
 
+    
+    @media screen and (max-width:1220px){
+        height: 20vw;
+        width: 20vw;
+        padding: 2vh;
+    }
+
+    @media screen and (max-width:1024px){
+        height: 30vh;
+        width: 30vh;
+        padding: 2vh;
+    }
+
+    @media screen and (max-width:768px){
+        height: 30vh;
+        width: 30vh;
+        padding: 2vh;
+    }
+
+    @media screen and (max-width:468px){
+        height: 30vh;
+        width: 30vh;
+        padding: 2vh;
+    }
   
 `;
 
@@ -418,30 +430,40 @@ export const FlexboxContainer = styled.div`
     display: flex;
     justify-content: center;
     position: relative;
+    padding-left: 5vh;
+    padding-right: 5vh;
+
+  
 
     @media screen and (max-width: 1024px){
        
        flex-wrap: wrap;
-       justify-content: space-around;
+       justify-content: center;
        align-items: center;
        align-content: space-between;
-  
+       padding-left: 5vh;
+       padding-right: 5vh;
    }
     
     @media screen and (max-width: 768px){
        
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         align-content: space-between;
+        padding-left: 5vh;
+        padding-right: 5vh;
    
     }
 
     @media screen and (max-width: 468px){
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         align-content: space-between;
+        padding-left: 5vh;
+        padding-right: 5vh;
+
     }
     
 

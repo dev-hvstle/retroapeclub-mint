@@ -8,7 +8,7 @@ import {
     TeamH2,TeamP,FlexboxContainer, FlexboxTeamContent
     } from './TeamElements'
 
-import bg from '../../Image/bgblack.jpg'
+import bg from '../../Image/5thpanel.png'
 import jetiam from '../../Image/JET_I_AM.gif'
 import itachi from '../../Image/ITACHII.png'
 import toman from '../../Image/TOMAN651.png'
@@ -29,16 +29,24 @@ function TeamSection() {
                         <TeamRow>
                             <Column1>
                                 <TeamImgWrapper>
+                               
+                                    
                                 <TeamH1>
-                                    TEAM
+                                   THE TEAM
                                 </TeamH1>
 
-                                <ImgLogo src={jetiam}></ImgLogo>
-                                <TeamH2>JET_I_AM</TeamH2>
-                                <TeamP>Founder/ Artist Retro Ape Club / Project Gojira 1/1 and Gen 2</TeamP>
+                            
+                              
 
 
                                         <FlexboxContainer>
+
+                                            <FlexboxTeamContent>
+                                                <ImgLogo src={jetiam}></ImgLogo>
+                                                <TeamH2>JET_I_AM</TeamH2>
+                                                <TeamP>Founder/ Artist Retro Ape Club / Project Gojira 1/1 and Gen 2</TeamP>
+                                            </FlexboxTeamContent>
+
                                             <FlexboxTeamContent>
                                                 <ImgLogo src={itachi}></ImgLogo>
                                                 <TeamH2>Itachii</TeamH2>

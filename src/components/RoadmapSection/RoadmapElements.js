@@ -49,7 +49,7 @@ export const HeroContainer = styled.div`
         src: url(${para});
     }
 
-     /* Add: before styles */
+  
 
    
 
@@ -67,7 +67,7 @@ export const HeroBg = styled.div`
     
 
     @media screen and (max-width: 768px){
-        height:160vh;
+        height:130vh;
 
     }
 
@@ -112,7 +112,7 @@ export const Column1 = styled.div`
     
     padding: 0 15px;
     grid-area: col1;
-    padding-top: 15vh;
+    padding-top: 0vh;
     
 
     @media screen and (max-width: 768px){
@@ -141,7 +141,7 @@ export const HeroContent = styled.div`
     max-width: 1200px;
     position: absolute;
     top:0vh;
-    padding-top: 10;
+    padding-top: 10vh;
     padding-bottom: 5vh;
     padding-left: 0vh;
     padding-right: 5vh;
@@ -154,7 +154,7 @@ export const HeroContent = styled.div`
         align-items: center;
         justify-content: center;
         top:00vw;
-        padding-top: 10;
+        padding-top: 5vh;
         padding-bottom: 5vh;
         padding-left: 5vh;
         padding-right: 5vh;
@@ -164,24 +164,24 @@ export const HeroContent = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        top:10vw;
-        padding-top: 10;
+        top:0vw;
+        padding-top: 15vh;
         padding-bottom: 5vh;
         padding-left: 5vh;
         padding-right: 5vh;
     }
 
     @media screen and (max-width:768px){
-        top:10vw;
-        padding-top: 10;
+      
+        padding-top: 5vh;
         padding-bottom: 5vh;
         padding-left: 5vh;
         padding-right: 5vh;
     }
 
     @media screen and (max-width:468px){
-        top:10vw;
-        padding-top: 1vh;
+    
+        padding-top: 5vh;
         padding-bottom: 5vh;
         padding-left: 2vh;
         padding-right: 2vh;
@@ -189,7 +189,7 @@ export const HeroContent = styled.div`
 `;
 
 export const HeroH1 = styled.h1`
-    color: #000;
+    color: #fff;
     font-size: 5vh;
     text-align: left;
     font-family: rr;
@@ -254,7 +254,7 @@ export const HeroImgWrapper = styled.div`
 
 export const HeroImg = styled.img`
     width: 100%;
-    border-radius: 20px;
+   
 
     @media screen and (max-width: 768px){
         width: 50%;

@@ -40,15 +40,14 @@ export const HeroContainer = styled.div`
     }
 
     
-     /* Add: before styles */
-     :before{
+   
+    :before{
         content: '';
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        background: linear-gradient(180deg, rgb(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%), linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
         z-index: 2;
     }
 
@@ -189,7 +188,7 @@ export const HeroContent = styled.div`
     max-width: 1200px;
     position: absolute;
     top:0vh;
-    padding-top: 5vh;
+    padding-top: 10vh;
     padding-bottom: 5vh;
     padding-left: 0vh;
     padding-right: 0vh;

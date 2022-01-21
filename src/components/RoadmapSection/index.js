@@ -13,9 +13,9 @@ import { HeroContainer, HeroBg,VideoBg,
         ImgBg,
         HeroP
         } from '../RoadmapSection/RoadmapElements'
-import bg from '../../Image/bgWhite.jpg';
+import bg from '../../Image/4thpanel.png';
 
-import Image from '../../Image/astronaut.gif'
+import Image from '../../Image/rock.png'
 
 import r1 from '../../Image/r1.png'
 import r2 from '../../Image/r2.png'
