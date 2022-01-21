@@ -11,7 +11,11 @@ import { HeroContainer, HeroBg,VideoBg,
         ButtonWrap,
         ImgBg,
         HeroP,
-        ImgLogo
+        ImgLogo,
+        Input,
+        FlexboxContainer,
+        FlexboxContent1,
+        FlexboxContent2
         } from './HeroElements'
 import bg from '../Image/bg.png';
 import { TextField } from '@material-ui/core';
@@ -130,11 +134,21 @@ const HeroSection = ({token, totalSupply, account, mintList, reservedList}) => {
                         <Column1>
                             <HeroImgWrapper>
                                 <ImgLogo src={retro}></ImgLogo>
+                                
                                 <HeroP>5000 UNIQUE NFT</HeroP>
                                 <HeroP>PRICE 0.04 ETH</HeroP>
+                                <FlexboxContainer>
+                                    <FlexboxContent1>
+                                    AMOUNT (Max 10):
+                                    </FlexboxContent1>
+
+                                    <FlexboxContent2>
+                                        <Input type="text" className='textareafocus'></Input>
+                                    </FlexboxContent2>
+                                </FlexboxContainer>
                             
-                                <TextField type="number" id='nftQty' InputProps={{classes: classes}} InputLabelProps={{classes: labelClasses}} label="Mint Quantity" fullWidth></TextField>
-                                
+
+                               
                                 <ButtonWrap>
                                     <button className='btnMint' onClick={buyNft}>MINT</button>
                                 </ButtonWrap>

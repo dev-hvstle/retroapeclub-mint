@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import fofbb from './../fonts/fofbb_ital.otf';
 import rr from './../fonts/roadrage.otf';
-import para from './../fonts/para.otf'
+
+import para from './../fonts/Tomorrow-Light.ttf'
 
 export const HeroContainer = styled.div`
 
@@ -91,8 +92,8 @@ export const Column1 = styled.div`
     padding-right: 5vh;
     padding-left: 5vh;
     grid-area: col1;
-    -o-object-fit: cover;
-    object-fit: cover;
+    display: flex;
+        justify-content: center;
     
     @media screen and (max-width: 820px){
         display: flex;
@@ -141,8 +142,8 @@ export const HeroContent = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        top:10vw;
-        padding-top: 10;
+
+        padding-top: 5vh;
         padding-bottom: 5vh;
         padding-left: 5vh;
         padding-right: 5vh;
@@ -152,8 +153,8 @@ export const HeroContent = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        top:10vw;
-        padding-top: 10;
+
+        padding-top: 5vh;
         padding-bottom: 5vh;
         padding-left: 5vh;
         padding-right: 5vh;
@@ -161,38 +162,38 @@ export const HeroContent = styled.div`
 
     @media screen and (max-width:820px){
         
-        padding-top: 10vh;
+        padding-top: 5vh;
         padding-bottom: 5vh;
         padding-left: 5vh;
         padding-right: 5vh; 
     }
 
     @media screen and (max-width:768px){
-        top:10vw;
-        padding-top: 10;
+
+        padding-top: 5vh;
         padding-bottom: 5vh;
         padding-left: 2vh;
         padding-right: 2vh;
     }
 
     @media screen and (max-width:540px){
-        top:15vh;
-        padding-top: 1vh;
+
+        padding-top: 5vh;
         padding-bottom: 5vh;
         padding-left: 2vh;
         padding-right: 2vh;
     }
 
     @media screen and (max-width:468px){
-        padding-top: 10vh;
+        padding-top: 5vh;
         padding-bottom: 5vh;
         padding-left: 2vh;
         padding-right: 2vh;
     }
 
     @media screen and (max-width:280px){
-        top:20vh;
-        padding-top: 1vh;
+ 
+        padding-top: 5vh;
         padding-bottom: 5vh;
         padding-left: 2vh;
         padding-right: 2vh;
@@ -221,26 +222,30 @@ export const HeroP = styled.p`
 `;
 
 export const HeroImgWrapper = styled.div`
-    max-width: 555px;
-    height: 100%;
+    max-width: auto;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-between;
 
     @media screen and (max-width: 787px){
         max-width: 350px;
         padding-right: 0vh;
-        padding-left: 5vh;
+        padding-left: 0vh;
     }
 
     @media screen and (max-width: 768px){
         max-width: 350px;
-        padding-right: 5vh;
-        padding-left: 5vh;
+        padding-right: 0vh;
+        padding-left: 0vh;
     }
 
     @media screen and (max-width: 460px){
         max-width: 350px;
 
-        padding-right: 5vh;
-    padding-left: 5vh;
+        padding-right: 0vh;
+    padding-left: 0vh;
     }
     
 `;
@@ -308,7 +313,7 @@ export const MintBtn = styled.button`
 
 export const ButtonWrap = styled.div`
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     width: auto;
     height: 80%;
     padding-top: 5%;
@@ -328,23 +333,111 @@ export const ButtonMint = styled.img`
 export const ImgLogo = styled.img`
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 50vh;
     
 
     @media screen and (max-width: 1024px){
-      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 2vh;
+        padding-right: 2vh;
         width: 70vh;
     }
 
     @media screen and (max-width: 768px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding-top: 0vh;
+        padding-left: 2vh;
+        padding-right: 2vh;
         width: 60vh;
     }
 
     @media screen and (max-width: 480px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 40vh;
+        padding-left: 5vh;
+        padding-right: 5vh;
     }
+
+    
 `;
 
+export const Input = styled.input`
+    
+    background: transparent;
+    font-family: para;
+    color: #fff;
+    padding: 1vh;
+    border-color: yellow;
+    border-radius: 5px;
+    width: 5vh;
+    
 
+`
+
+export const FlexboxContainer = styled.div`
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding:2vh;
+
+    @media screen and (max-width: 1024px){
+       
+       flex-wrap: wrap;
+       justify-content: space-around;
+       align-items: center;
+       align-content: space-between;
+  
+   }
+    
+    @media screen and (max-width: 768px){
+       
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-between;
+   
+    }
+
+    @media screen and (max-width: 468px){
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-between;
+    }
+    
+
+`
+
+export const FlexboxContent1 = styled.div`
+    display: flex;
+    align-items: center;
+    padding: 0vh;
+    color: #fff;
+    font-family: para;
+    padding-right: 1vh;
+    
+    @media screen and (max-width:460px){
+        padding-left: 5vh;
+    }
+
+`
+
+export const FlexboxContent2 = styled.div`
+    display: flex;
+    align-items: center;
+    padding: 0vh;
+    
+    @media screen and (max-width:460px){
+        padding-right: 5vh;
+    }
+
+`
 
