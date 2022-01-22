@@ -23,7 +23,7 @@ export const FooterContainer = styled.footer`
 
 
     @media screen and (max-width:768px){
-        top:235vh;
+        top:300vh;
         padding-bottom: 5vh;
     }
 

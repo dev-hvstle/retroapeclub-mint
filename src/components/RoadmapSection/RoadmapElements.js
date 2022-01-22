@@ -141,7 +141,7 @@ export const HeroContent = styled.div`
     max-width: 1200px;
     position: absolute;
     top:0vh;
-    padding-top: 10vh;
+    padding-top: 5vh;
     padding-bottom: 5vh;
     padding-left: 0vh;
     padding-right: 5vh;
@@ -327,9 +327,11 @@ export const ButtonWrap = styled.div`
 
 export const ImgLogo = styled.img`
    
-    height: 8vh;
+    height: 5vw;
     width: auto;
     padding: 0vh;
+    display: flex;
+    justify-content: center;
 
   
 `;

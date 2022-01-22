@@ -141,6 +141,7 @@ export const Column1 = styled.div`
 
     padding-top:0vh;
     grid-area: col1;
+    
 
     @media screen and (max-width:1024px){
         padding: 0vh;
@@ -168,7 +169,7 @@ export const Column1 = styled.div`
 export const Column2 = styled.div`
     padding: 0 24px;
     grid-area: col2;
-    padding-bottom:20vh;
+    padding-bottom:50vh;
 
     @media screen and (max-width:1024px){
         padding-top:10vh;
@@ -255,11 +256,18 @@ export const HeroP = styled.p`
     @media screen and (max-width: 1024px){
         font-size: 5vh;
         text-align: center;
+       
+    }
+
+    @media screen and (max-width: 800px){
+        font-size: 3vh;
+        text-align: center;
     }
 
     @media screen and (max-width: 768px){
         font-size: 2vh;
         text-align: center;
+        
     }
 
     @media screen and (max-width: 480px){
@@ -274,29 +282,41 @@ export const HeroP = styled.p`
 export const HeroImgWrapper = styled.div`
     max-width: 555px;
     height: 100%;
+    display: flex;
+    justify-content: center;
 `;
 
 
 export const HeroImg = styled.img`
-    width: 60vh;
+    width: 100vh;
     padding:2vh;
+    padding-right: 5vh;
+    display: flex;
+    justify-content: center;
    
 
     @media screen and (max-width:1024px){
         
         width: 45vh;
         padding:2vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         
     }
 
     @media screen and (max-width:768px){
         width: 40vh;
         padding:2vh;
+        display: flex;
+        justify-content: center;
     }
 
     @media screen and (max-width:460px){
         width: 35vh;
         padding:2vh;
+        display: flex;
+        justify-content: center;
     }
 `;
 

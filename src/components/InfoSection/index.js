@@ -37,7 +37,13 @@ const HeroSection = () => {
                 <HeroRow>
                         <Column1>
                             <HeroImgWrapper>
-                                <InfoRow>
+                                <HeroImg src={Image}></HeroImg>
+                            </HeroImgWrapper>
+                        </Column1>
+
+                        <Column2>
+                            <Column2Wrapper>
+                            <InfoRow>
                                     <InfoH1>APE CLUB NFTs!</InfoH1>
                                 </InfoRow>
                                
@@ -59,14 +65,8 @@ const HeroSection = () => {
                                 to an alpha that provides value to the community. Holding 5 Retro Apes
                                 might give you access to a future project 
                                 </InfoP>
-                            </HeroImgWrapper>
-                        </Column1>
 
-                        <Column2>
-                            <Column2Wrapper>
-                                
-
-                                <HeroImg src={Image}></HeroImg>
+                               
                                 
                                
                             </Column2Wrapper>

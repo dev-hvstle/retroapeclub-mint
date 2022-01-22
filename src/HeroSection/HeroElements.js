@@ -273,7 +273,7 @@ export const HeroImgWrapper = styled.div`
     max-width: auto;
     height: auto;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     align-content: space-between;
 
@@ -405,7 +405,7 @@ export const ImgLogo = styled.img`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50vh;
+    width: 30vw;
     
 
     @media screen and (max-width: 1024px){
@@ -457,7 +457,8 @@ export const FlexboxContainer = styled.div`
     display: flex;
     justify-content: center;
     position: relative;
-    padding:2vh;
+    padding-right:2vh;
+    padding-right:left;
 
     @media screen and (max-width: 1024px){
        
@@ -524,7 +525,7 @@ export const FlexboxContent1P = styled.div`
     padding: 0vh;
     color: #fff;
     font-family: para;
- 
+    font-weight: 900;
     font-size: 20px;
     text-align: center;
     
