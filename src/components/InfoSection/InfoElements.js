@@ -4,6 +4,7 @@ import cyber from '../../fonts/batman.ttf';
 import para from '../../fonts/para.otf'
 import gidole from '../../fonts/Gidole.otf'
 import rr from '../../fonts/roadrage.otf';
+import tom from '../../fonts/Tomorrow-Light.ttf';
 
 export const HeroContainer = styled.div`
 
@@ -450,7 +451,7 @@ export const InfoP = styled.p`
     padding-bottom:2vh;
     font-family: para;
     letter-spacing: .3vh;
-    font-family: gidole;
+    font-family: tom;
     padding: 5vh;
     padding-top: 2vh;
     padding-bottom:0vh;

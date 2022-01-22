@@ -274,9 +274,9 @@ export const TeamContent = styled.div`
 
 export const TeamH1 = styled.h1`
     color: #fff;
-    font-size: 5vh;
+    font-size: 7vh;
     text-align: center;
-    font-family: para;
+    font-family: rr;
     letter-spacing: 1.1vh;
     
     padding-bottom:5vh;
@@ -307,7 +307,8 @@ export const TeamH2 = styled.h1`
     color: #fff;
     font-size: 3vh;
     text-align: center;
-    font-family: rr;
+    font-family: tom;
+    font-weight: bold;
     letter-spacing: 1.1vh;
     line-height: 6.5vh;
     padding-top:3vh;

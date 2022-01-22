@@ -29,7 +29,7 @@ import retro from './../Image/retro.png'
 
 
 
-const HeroSection = ({token, totalSupply, account, mintList, reservedList}) => {
+const HeroSection = ({token, account, isEligibleForFreeMint}) => {
 
     const useStyles = makeStyles({
         root:{
@@ -73,9 +73,16 @@ const HeroSection = ({token, totalSupply, account, mintList, reservedList}) => {
     const buyNft = async () =>{
         if(typeof window.ethereum !== 'undefined'){
             const qty = document.getElementById('nftQty').value;
-            var whiteList = ["0x1655147A35e6Cafc1d6E587414286e6287698B7f",
-                                "0x02e3451AA4Ec12Cb350b3d969a6057ef6ECc96ef"];
-
+            
+            if(isEligibleForFreeMint){
+                try{
+                    token.methods.freeMint().send({from: account})
+                }
+                catch(e){
+                    console.log("Error: ", e);
+                }
+                return;
+            }
             if(qty === ""){
                 window.alert("Quantity Cannot be 0!")
                 return;
@@ -86,29 +93,8 @@ const HeroSection = ({token, totalSupply, account, mintList, reservedList}) => {
             }
             if(token !== 'undefined'){
                 const qty = document.getElementById('nftQty').value;
-                const amount = String((4 * qty) * 10 ** 16);
-                const whitelistSaleEnd = await token.methods.whitelistSaleEnd().call();
-                const currentTime = parseInt(Date.now() / 1000);
+                const amount = String((5 * qty) * 10 ** 16);
 
-                console.log(typeof account);
-
-                if(currentTime < whitelistSaleEnd){
-
-                    for(var index=0; index < whiteList.length; index++){
-                        if(account === whiteList[index].toLocaleLowerCase()){
-                            try{
-                                token.methods.mint("123asd", qty).send({value: amount, from: account})
-                                return;
-                            }
-                            catch(e){
-                                console.log("Error: ", e);
-                            }
-                        }
-                    }
-                    window.alert("You aren't whitelisted! But you can buy on public sale!");
-                    return;
-                }
-                //console.log(tempList);                
                 try{
                     token.methods.mint("123asd", qty).send({value: amount, from: account})
                 }
@@ -148,21 +134,21 @@ const HeroSection = ({token, totalSupply, account, mintList, reservedList}) => {
                                 </FlexboxContainer>
                                 
                                 
-                                <HeroP>PRICE 0.04 ETH</HeroP>
+                                <HeroP>PRICE 0.05 ETH</HeroP>
                                 <FlexboxContainer>
                                     <FlexboxContent1>
                                     AMOUNT (Max 10):
                                     </FlexboxContent1>
 
                                     <FlexboxContent2>
-                                        <Input type="text" className='textareafocus'></Input>
+                                        <Input id='nftQty' type="text" className='textareafocus'></Input>
                                     </FlexboxContent2>
                                 </FlexboxContainer>
                             
 
                                
                                 <ButtonWrap>
-                                    <button className='btnMint' onClick={buyNft}>MINT</button>
+                                    <button className='btnMint' onClick={buyNft}>{(isEligibleForFreeMint ? "Free Mint" : "Mint")}</button>
                                 </ButtonWrap>
 
                             </HeroImgWrapper>

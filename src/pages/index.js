@@ -18,58 +18,61 @@ const Home = () => {
     const [account, setAccount] = useState('Connect Wallet');
     const [isInitialized, setInitialized] = useState(false);
     const [token, setToken] = useState();
-    const [totalSupply, setTotalSupply] = useState(0);
-    var [mintList, setMintList] = useState([]);
-    var [reservedList, setReservedList] = useState([]);
+    const [isEligibleForFreeMint, setIsEligibleForFreeMint] = useState(false);
     const web3 = new Web3(window.ethereum);
-    const tokenAddress = "0x96b006802f2971B9580d58d8B871Deb04b78364b";
+    const tokenAddress = "0xC944AfA331214fA2596f722d477234CaB4A4A712";
 
     const initializeWallet = async () =>{
-      if(typeof window.ethereum !== 'undefined'){
-          const accounts = await window.ethereum.request({method: 'eth_requestAccounts'});
-          const tempAccount = accounts[0];
-          console.log(tempAccount);
-          setAccount(tempAccount);
-          const chainId = await web3.eth.getChainId();
-          if(tempAccount !== ''){
-              setInitialized(true);
-          }
-          
-      }
-
-  }
-
-  const loadContract = async() =>{
-    try{
-        const tempToken = new web3.eth.Contract(RetroApeClub.abi, tokenAddress);
-        const tempTotalSupply = await tempToken.methods.totalSupply().call();
-
-        setToken(tempToken);
-        //console.log(tempToken);
-
-        setTotalSupply(parseInt(tempTotalSupply) + 200);
-        //console.log(tempTotalSupply);
-
-        // setMintList(tempMintList.map(Number));
-        // //console.log(tempMintList);
-
-        // setReservedList(tempReservedList.map(Number));
-        //console.log(tempReservedList.map(Number));
+        if(typeof window.ethereum !== 'undefined'){
+            const accounts = await window.ethereum.request({method: 'eth_requestAccounts'});
+            const tempAccount = web3.utils.toChecksumAddress(accounts[0]);
+            console.log(tempAccount);
+            setAccount(tempAccount);
+            const chainId = await web3.eth.getChainId();
+            if(tempAccount !== ''){
+                setInitialized(true);
+            }
+            try{
+                const tempToken = new web3.eth.Contract(RetroApeClub.abi, tokenAddress);
+                const tempIsIncludedInFreeList = await tempToken.methods.freeMintList(tempAccount).call();
+                const tempIsFreeMintClaimed = await tempToken.methods.isFreeMintClaimed(tempAccount).call();
+                if(tempIsIncludedInFreeList && !tempIsFreeMintClaimed){
+                    setIsEligibleForFreeMint(true);
+                }
+                setToken(tempToken);
+                //console.log(tempToken);
+        
+            }
+            catch(e){
+                console.log('Errror: ', e);
+            }
+        }
     }
-    catch(e){
-        console.log('Errror: ', e);
-    }
-}
+
+//   const loadContract = async() =>{
+//     try{
+//         const tempToken = new web3.eth.Contract(RetroApeClub.abi, tokenAddress);
+//         const tempTotalSupply = await tempToken.methods.totalSupply().call();
+//         const tempIsIncludedInFreeList = await tempToken.methods.freeMintList(account).call();
+//         console.log(account);
+//         setToken(tempToken);
+//         //console.log(tempToken);
+
+//     }
+//     catch(e){
+//         console.log('Errror: ', e);
+//     }
+// }
 
 
     const toggle = () => {
       setIsOpen(!isOpen)
     }
 
-    window.onload = () =>{
+    window.onload = async() =>{
         if(typeof  window.ethereum !== 'undefined'){
-            initializeWallet(); 
-            loadContract();
+            await initializeWallet(); 
+            //await loadContract();
 
             window.ethereum.on('chainChanged', () =>{
                 window.location.reload();
@@ -92,7 +95,7 @@ const Home = () => {
           <Sidebar toggle={toggle} isOpen={isOpen} initializeWallet={initializeWallet} isInitialized={isInitialized} account={account}/>
           <Navbar toggle={toggle} initializeWallet={initializeWallet} isInitialized={isInitialized} account={account}/>
           <MainSection />
-          <HeroSection token={token} account={account}/>
+          <HeroSection token={token} account={account} isEligibleForFreeMint={isEligibleForFreeMint}/>
           <InfoSection />
           <RoadmapSection />
           <TeamSection />
