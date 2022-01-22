@@ -407,7 +407,7 @@ export const InfoRow = styled.div`
 
 export const InfoH1 = styled.h1`
     color: #fff;
-    font-size: 5vh;
+    font-size: 7vh;
     text-align: left;
     font-family: rr;
     letter-spacing: 1.2vh;
@@ -449,7 +449,6 @@ export const InfoP = styled.p`
     font-size: 2vh;
     text-align: left;
     padding-bottom:2vh;
-    font-family: para;
     letter-spacing: .3vh;
     font-family: tom;
     padding: 5vh;

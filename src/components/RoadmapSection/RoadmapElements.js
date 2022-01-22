@@ -190,7 +190,7 @@ export const HeroContent = styled.div`
 
 export const HeroH1 = styled.h1`
     color: #fff;
-    font-size: 5vh;
+    font-size: 7vh;
     text-align: left;
     font-family: rr;
     letter-spacing: 1.1vh;

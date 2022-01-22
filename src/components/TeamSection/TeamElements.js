@@ -356,7 +356,7 @@ export const TeamP = styled.p`
     color: #fff;
     font-size: 2vh;
     text-align: center;
-    font-family: gidole;
+    font-family: para;
    
 
 `

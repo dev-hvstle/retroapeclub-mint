@@ -44,7 +44,7 @@ const HeroSection = () => {
                         <Column2>
                             <Column2Wrapper>
                             <InfoRow>
-                                    <InfoH1>APE CLUB NFTs!</InfoH1>
+                                    <InfoH1>RETRO APE CLUB NFTs!</InfoH1>
                                 </InfoRow>
                                
 
