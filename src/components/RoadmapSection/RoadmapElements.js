@@ -333,6 +333,46 @@ export const ImgLogo = styled.img`
     display: flex;
     justify-content: center;
 
+    @media screen and (max-width:1224px){
+        height: 8.5vw;
+        width: auto;
+        padding: 0vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    @media screen and (max-width:1024px){
+        height: 8vw;
+        width: auto;
+        padding: 0vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    @media screen and (max-width:1024px){
+        height: 8vw;
+        width: auto;
+        padding: 0vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    @media screen and (max-width:768px){
+        height: 13vw;
+        width: auto;
+        padding: 0vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    @media screen and (max-width:468px){
+        height: 13vw;
+        width: auto;
+        padding: 0vh;
+        display: flex;
+        justify-content: center;
+    }
+
   
 `;
 
