@@ -307,7 +307,7 @@ export const HeroImg = styled.img`
     }
 
     @media screen and (max-width:768px){
-        width: 40vh;
+        width: 55vh;
         padding:2vh;
         display: flex;
         justify-content: center;
@@ -459,6 +459,14 @@ export const InfoP = styled.p`
     @media screen and (max-width: 1024px){
         font-size: 2vh;
         text-align: center;
+        
+    }
+
+    @media screen and (max-width: 1000px){
+        font-size: 1.5vh;
+        text-align: center;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
         
     }
 
