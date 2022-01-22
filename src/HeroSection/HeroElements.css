@@ -7,11 +7,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: -webkit-linear-gradient(#2022d3 30%, #fff5fb 50% 50%, #a30051 50% 65%, #fff5fb 70%);
+    background: -webkit-linear-gradient(yellow 30%, yellow 50% 50%, yellow 50% 65%, yellow 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
     font-size: 5vh;
+    text-shadow: 0 0 20px yellow;
 
     
   }
