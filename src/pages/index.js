@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useRef} from 'react'
 import Web3 from 'web3';
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar';
@@ -21,6 +21,7 @@ const Home = () => {
     const [isEligibleForFreeMint, setIsEligibleForFreeMint] = useState(false);
     const web3 = new Web3(window.ethereum);
     const tokenAddress = "0xC944AfA331214fA2596f722d477234CaB4A4A712";
+    const audioBG = useRef(null);
 
     const initializeWallet = async () =>{
         if(typeof window.ethereum !== 'undefined'){
@@ -70,6 +71,7 @@ const Home = () => {
     }
 
     window.onload = async() =>{
+        audioBG.current.play()
         if(typeof  window.ethereum !== 'undefined'){
             await initializeWallet(); 
             //await loadContract();
@@ -89,8 +91,8 @@ const Home = () => {
 
     return (
         <>
-          <audio autoPlay loop>
-            <source src={bgMusic} type='audio/mp3'></source>
+          <audio src={bgMusic} ref={audioBG} loop>
+            
           </audio>
           <Sidebar toggle={toggle} isOpen={isOpen} initializeWallet={initializeWallet} isInitialized={isInitialized} account={account}/>
           <Navbar toggle={toggle} initializeWallet={initializeWallet} isInitialized={isInitialized} account={account}/>

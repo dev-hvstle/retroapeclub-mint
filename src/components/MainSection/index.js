@@ -38,8 +38,8 @@ const MainSection = () => {
                                             spy={true}
                                             exact='true'
                                             offset={-80}>STEALTH MINT NOW LIVE</MainH1>
-                                            <ImgWrap to="hero">
-                                                <ImgLogoMint src={mint} id='easeloadafter' className='bounce'></ImgLogoMint>
+                                            <ImgWrap className='easeloadafter' to="hero">
+                                                <ImgLogoMint src={mint} className='bounce'></ImgLogoMint>
                                             </ImgWrap>
                                             </FlexboxTeamContent>
                                         </FlexboxContainer>
