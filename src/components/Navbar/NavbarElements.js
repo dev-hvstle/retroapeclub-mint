@@ -89,24 +89,38 @@ export const ImgLogo = styled.img`
 
 export const ImgLogoRetro = styled.img`
     display: flex;
+    justify-content: center;
     align-items: center;
-    height: 10vh;
+    height: 3vw;
     width: auto;
 
+    @media screen and (max-width:1300px){
+        height: 3vw;
+        padding-left: 2vh;
+        
+        width: auto;
+    }
+
+
+    @media screen and (max-width:1024px){
+        height: 5vw;
+        padding-left: 2vh;
+        width: auto;
+    }
 
     @media screen and (max-width:1024){
-        height: 70%;
-        
+        height: 5vw;
+        padding-left: 2vh;
         width: auto;
     }
 
     @media screen and (max-width: 460px){
         display: flex;
         align-items: center;
-        height: 15vh;
+        height: 12vw;
         width: auto;
-    
-        padding-top: 1.8vh;
+        
+       
     }
 `;
 
