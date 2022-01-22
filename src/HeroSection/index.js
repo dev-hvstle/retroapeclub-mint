@@ -141,7 +141,7 @@ const HeroSection = ({token, account, isEligibleForFreeMint}) => {
                                     </FlexboxContent1>
 
                                     <FlexboxContent2>
-                                        <Input id='nftQty' type="text" className='textareafocus' disabled={(isEligibleForFreeMint ? "disabled" : "")}></Input>
+                                        <Input id='nftQty' type="text" className='textareafocus' disabled={(isEligibleForFreeMint ? "disabled" : "")} value={(isEligibleForFreeMint ? 3 : 0)}></Input>
                                     </FlexboxContent2>
                                 </FlexboxContainer>
                             
