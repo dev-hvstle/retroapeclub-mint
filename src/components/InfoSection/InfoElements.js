@@ -329,7 +329,7 @@ export const Column2Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 0vh;
+    padding-top: 5vh;
     padding-bottom: 0vh;
     padding-left: 0vh;
     padding-right: 0vh;
