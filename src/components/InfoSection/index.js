@@ -62,8 +62,8 @@ const HeroSection = () => {
                                 
                                 <InfoP>
                                 Pure Art and Chill Vibes and access
-                                to an alpha that provides value to the community. Holding 5 Retro Apes
-                                might give you access to a future project 
+                                to an alpha that provides value to the community. Holding 5 or more Retro Apes
+                                will guarantee you access to a future project 
                                 </InfoP>
 
                                

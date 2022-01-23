@@ -83,7 +83,7 @@ const HeroSection = ({token, account, isEligibleForFreeMint}) => {
                 }
                 return;
             }
-            if(qty === ""){
+            if(qty === "" || qty === 0){
                 window.alert("Quantity Cannot be 0!")
                 return;
             }

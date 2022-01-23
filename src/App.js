@@ -5,8 +5,7 @@ import Home from './pages/'
 
 
 function App() {
-  return (
-    
+  return ( 
     <Router>
       <Home />
     </Router>

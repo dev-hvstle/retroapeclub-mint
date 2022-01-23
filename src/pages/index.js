@@ -11,6 +11,7 @@ import FooterSection from '../components/FooterSection';
 import bgMusic from '../music/loop.mp3';
 import silentMusic from '../music/silence.mp3';
 import MainSection from '../components/MainSection';
+import useSound from 'use-sound';
  
 const Home = () => {
 
@@ -20,8 +21,8 @@ const Home = () => {
     const [token, setToken] = useState();
     const [isEligibleForFreeMint, setIsEligibleForFreeMint] = useState(false);
     const web3 = new Web3(window.ethereum);
-    const tokenAddress = "0xC944AfA331214fA2596f722d477234CaB4A4A712";
-    const audioBG = useRef(null);
+    const tokenAddress = "0x6527f58e5CFD0A0F1F77399F865e1E685F89986D";
+    const [audioBg] = useSound(bgMusic);
 
     const initializeWallet = async () =>{
         if(typeof window.ethereum !== 'undefined'){
@@ -70,10 +71,15 @@ const Home = () => {
       setIsOpen(!isOpen)
     }
 
-    window.onload = async() =>{
-        audioBG.current.play()
+    const playMusic = () =>{
+        var audioBG = document.getElementById("audioBg");
+        audioBG.play();
+    }
+
+    window.onload = () =>{
+        audioBg.call();
         if(typeof  window.ethereum !== 'undefined'){
-            await initializeWallet(); 
+            initializeWallet(); 
             //await loadContract();
 
             window.ethereum.on('chainChanged', () =>{
@@ -91,17 +97,16 @@ const Home = () => {
 
     return (
         <>
-          <audio src={bgMusic} ref={audioBG} loop>
-            
-          </audio>
-          <Sidebar toggle={toggle} isOpen={isOpen} initializeWallet={initializeWallet} isInitialized={isInitialized} account={account}/>
-          <Navbar toggle={toggle} initializeWallet={initializeWallet} isInitialized={isInitialized} account={account}/>
-          <MainSection />
-          <HeroSection token={token} account={account} isEligibleForFreeMint={isEligibleForFreeMint}/>
-          <InfoSection />
-          <RoadmapSection />
-          <TeamSection />
-          <FooterSection />
+        <audio id='audioBg' src={bgMusic}></audio>
+
+        <Sidebar toggle={toggle} isOpen={isOpen} initializeWallet={initializeWallet} isInitialized={isInitialized} account={account}/>
+        <Navbar toggle={toggle} initializeWallet={initializeWallet} isInitialized={isInitialized} account={account}/>
+        <MainSection />
+        <HeroSection token={token} account={account} isEligibleForFreeMint={isEligibleForFreeMint}/>
+        <InfoSection />
+        <RoadmapSection />
+        <TeamSection />
+        <FooterSection />
         </>
     )
 }
