@@ -29,7 +29,7 @@ import retro from './../Image/retro.png'
 
 
 
-const HeroSection = ({token, account, isEligibleForFreeMint}) => {
+const HeroSection = ({token, account, isEligibleForFreeMint, remainingSupply}) => {
 
     const useStyles = makeStyles({
         root:{
@@ -87,8 +87,8 @@ const HeroSection = ({token, account, isEligibleForFreeMint}) => {
                 window.alert("Quantity Cannot be 0!")
                 return;
             }
-            if(qty > 100){
-                window.alert("Quantity Should Not Be More Than 100!");
+            if(qty > 10){
+                window.alert("Quantity Should Not Be More Than 10!");
                 return;
             }
             if(token !== 'undefined'){
@@ -96,7 +96,7 @@ const HeroSection = ({token, account, isEligibleForFreeMint}) => {
                 const amount = String((5 * qty) * 10 ** 16);
 
                 try{
-                    token.methods.mint("123asd", qty).send({value: amount, from: account})
+                    token.methods.mint(qty).send({value: amount, from: account})
                 }
                 catch(e){
                     console.log("Error: ", e);
@@ -125,11 +125,11 @@ const HeroSection = ({token, account, isEligibleForFreeMint}) => {
                                 <ImgLogo src={retro}></ImgLogo>
                                 <FlexboxContainer>
                                     <FlexboxContent1P>
-                                        5000
+                                        {remainingSupply}
                                     </FlexboxContent1P>
 
                                     <FlexboxContent2P>
-                                        <HeroP>UNIQUE NFT</HeroP>
+                                        <HeroP>UNIQUE NFTs</HeroP>
                                     </FlexboxContent2P>
                                 </FlexboxContainer>
                                 
@@ -141,7 +141,7 @@ const HeroSection = ({token, account, isEligibleForFreeMint}) => {
                                     </FlexboxContent1>
 
                                     <FlexboxContent2>
-                                        <Input id='nftQty' type="text" className='textareafocus' disabled={(isEligibleForFreeMint ? "disabled" : "")} value={(isEligibleForFreeMint ? 3 : 0)}></Input>
+                                        <Input id='nftQty' type="text" className='textareafocus' disabled={(isEligibleForFreeMint ? "disabled" : "")} ></Input>
                                     </FlexboxContent2>
                                 </FlexboxContainer>
                             

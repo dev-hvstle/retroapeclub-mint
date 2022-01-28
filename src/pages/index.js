@@ -18,12 +18,27 @@ const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
     const [account, setAccount] = useState('Connect Wallet');
     const [isInitialized, setInitialized] = useState(false);
+    const [remainingSupply, setRemainingSupply] = useState(5000);
     const [token, setToken] = useState();
     const [isEligibleForFreeMint, setIsEligibleForFreeMint] = useState(false);
     const web3 = new Web3(window.ethereum);
-    const tokenAddress = "0x6527f58e5CFD0A0F1F77399F865e1E685F89986D";
+    const tokenAddress = "0xE8c7cFe6f941BC88E4866EcAcB837f8AB416AF58";
     const [audioBg] = useSound(bgMusic);
 
+    const {MerkleTree} = require('merkletreejs');
+    const keccak256 = require('keccak256');
+
+
+
+    let whitelistAddy = ["0x0040347b5f6d17C6Fd3969103246a70B234Ce80C","0x80d3F0c820Cf9Ed71a42De74220Cfc3165966eDe","0xa45A3692e37089cE1AFEc88921650Cd1f1C2c6bD"]
+
+
+    const leafNodes = whitelistAddy.map(addr => keccak256(addr));
+    const merkleTree = new MerkleTree(leafNodes, keccak256, {sortPairs: true});
+    const rootHash = merkleTree.getRoot();
+    console.log('Whitelist Merkle Tree\n', merkleTree.toString());
+    console.log('RootHash : ', rootHash);
+    
     const initializeWallet = async () =>{
         if(typeof window.ethereum !== 'undefined'){
             const accounts = await window.ethereum.request({method: 'eth_requestAccounts'});
@@ -38,9 +53,11 @@ const Home = () => {
                 const tempToken = new web3.eth.Contract(RetroApeClub.abi, tokenAddress);
                 const tempIsIncludedInFreeList = await tempToken.methods.freeMintList(tempAccount).call();
                 const tempIsFreeMintClaimed = await tempToken.methods.isFreeMintClaimed(tempAccount).call();
+                const tempRemainingSupply = await tempToken.methods.totalSupply().call();
                 if(tempIsIncludedInFreeList && !tempIsFreeMintClaimed){
                     setIsEligibleForFreeMint(true);
                 }
+                setRemainingSupply(5000-tempRemainingSupply);
                 setToken(tempToken);
                 //console.log(tempToken);
         
@@ -102,7 +119,7 @@ const Home = () => {
         <Sidebar toggle={toggle} isOpen={isOpen} initializeWallet={initializeWallet} isInitialized={isInitialized} account={account}/>
         <Navbar toggle={toggle} initializeWallet={initializeWallet} isInitialized={isInitialized} account={account}/>
         <MainSection />
-        <HeroSection token={token} account={account} isEligibleForFreeMint={isEligibleForFreeMint}/>
+        <HeroSection token={token} account={account} isEligibleForFreeMint={isEligibleForFreeMint} remainingSupply={remainingSupply}/>
         <InfoSection />
         <RoadmapSection />
         <TeamSection />
