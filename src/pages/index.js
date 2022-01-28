@@ -25,19 +25,19 @@ const Home = () => {
     const tokenAddress = "0xE8c7cFe6f941BC88E4866EcAcB837f8AB416AF58";
     const [audioBg] = useSound(bgMusic);
 
-    const {MerkleTree} = require('merkletreejs');
-    const keccak256 = require('keccak256');
+    // const {MerkleTree} = require('merkletreejs');
+    // const keccak256 = require('keccak256');
 
 
 
-    let whitelistAddy = ["0x0040347b5f6d17C6Fd3969103246a70B234Ce80C","0x80d3F0c820Cf9Ed71a42De74220Cfc3165966eDe","0xa45A3692e37089cE1AFEc88921650Cd1f1C2c6bD"];
+    // let whitelistAddy = ["0x0040347b5f6d17C6Fd3969103246a70B234Ce80C","0x80d3F0c820Cf9Ed71a42De74220Cfc3165966eDe","0xa45A3692e37089cE1AFEc88921650Cd1f1C2c6bD"];
 
 
-    const leafNodes = whitelistAddy.map(addr => keccak256(addr));
-    const merkleTree = new MerkleTree(leafNodes, keccak256, {sortPairs: true});
-    const rootHash = merkleTree.getRoot();
-    console.log('Whitelist Merkle Tree\n', merkleTree.toString());
-    console.log('RootHash : ', rootHash);
+    // const leafNodes = whitelistAddy.map(addr => keccak256(addr));
+    // const merkleTree = new MerkleTree(leafNodes, keccak256, {sortPairs: true});
+    // const rootHash = merkleTree.getRoot();
+    // console.log('Whitelist Merkle Tree\n', merkleTree.toString());
+    // console.log('RootHash : ', rootHash);
     
     const initializeWallet = async () =>{
         if(typeof window.ethereum !== 'undefined'){
