@@ -53,14 +53,11 @@ const RoadmapSection = () => {
 
                         <Column2>
                             <Column2Wrapper>
-                                <HeroH1>ROADMAP</HeroH1>
+                               
+                                <HeroP>
+                                No Roadmap, No promises. Just Art and Vibes.
+                                </HeroP>
                                 
-                                <ImgLogo src={r1} to="/"></ImgLogo>
-                                <ImgLogo src={r2} to="/"></ImgLogo>
-                                <ImgLogo src={r3} to="/"></ImgLogo>
-                                <ImgLogo src={r4} to="/"></ImgLogo>
-                                <ImgLogo src={r5} to="/"></ImgLogo>
-                                <ImgLogo src={r6} to="/"></ImgLogo>
                                 
                             </Column2Wrapper>
                         </Column2>              

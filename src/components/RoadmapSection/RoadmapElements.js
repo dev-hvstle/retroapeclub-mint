@@ -129,11 +129,39 @@ export const Column1 = styled.div`
 `;
 
 export const Column2 = styled.div`
-    margin-bottom: 30px;
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
     padding:5vh;
     padding-top:5vh;
     padding-bottom: 0vh;
-    grid-area: col2;
+
+    @media screen and (max-width:1200px){
+        width: 50vw;
+        flex: wrap;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    @media screen and (max-width:768px){
+        width: 90vw;
+        flex: wrap;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    @media screen and (max-width:468px){
+        flex: wrap;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+
 `;
 
 export const HeroContent = styled.div`
@@ -141,7 +169,7 @@ export const HeroContent = styled.div`
     max-width: 1200px;
     position: absolute;
     top:0vh;
-    padding-top: 5vh;
+    padding-top: 10vh;
     padding-bottom: 5vh;
     padding-left: 0vh;
     padding-right: 5vh;
@@ -219,7 +247,7 @@ export const HeroH1 = styled.h1`
 
 export const HeroP = styled.p`
 
-    color: #000;
+    color: #fff;
     font-size: 30px;
     text-align: left;
     
@@ -228,12 +256,13 @@ export const HeroP = styled.p`
     letter-spacing: .3vh;
 
     @media screen and (max-width: 768px){
-        font-size: 20px;
+        font-size: 4vh;
         text-align: center;
     }
 
     @media screen and (max-width: 480px){
-        font-size: 20px;
+        font-size: 3vh;
+        text-align: center;
     }
     
 
@@ -245,7 +274,7 @@ export const HeroImgWrapper = styled.div`
     max-width: 555px;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     
 `;
@@ -257,7 +286,7 @@ export const HeroImg = styled.img`
    
 
     @media screen and (max-width: 768px){
-        width: 50%;
+        width: 80%;
     }
 
     @media screen and (max-width: 480px){
@@ -266,17 +295,20 @@ export const HeroImg = styled.img`
 `;
 
 export const Column2Wrapper = styled.div`
-    max-width: 600px;
+
     height: 50vh;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding-top: 0vh;
-    padding-bottom: 5vh;
+    padding-bottom: 0vh;
     padding-left: 0vh;
     padding-right: 0vh;
 
     @media screen and (max-width: 460px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding:5vh;
     }
 `;
