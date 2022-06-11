@@ -23,8 +23,8 @@ const Home = () => {
   const [token, setToken] = useState();
   const [isEligibleForFreeMint, setIsEligibleForFreeMint] = useState(false);
   const web3 = new Web3(window.ethereum);
-  const tokenAddress = "0xF1f04a9DEBC4c244D9f9ee77ECCef31A2c125128";
-  const [audioBg] = useSound(bgMusic);
+  const tokenAddress = "0x10352b370C731Bc98328aCea70E7ed55Fc88b289";
+  //const [audioBg] = useSound(bgMusic);
 
   // const {MerkleTree} = require('merkletreejs');
   // const keccak256 = require('keccak256');
@@ -83,26 +83,26 @@ const Home = () => {
     setIsOpen(!isOpen);
   };
 
-  const playMusic = () => {
-    var audioBG = document.getElementById("audioBg");
-    audioBG.play();
-  };
+  // const playMusic = () => {
+  //   var audioBG = document.getElementById("audioBg");
+  //   audioBG.play();
+  // };
 
-  window.onload = () => {
-    audioBg.call();
-    if (typeof window.ethereum !== "undefined") {
-      initializeWallet();
-      //await loadContract();
+  // window.onload = () => {
+  //   audioBg.call();
+  //   if (typeof window.ethereum !== "undefined") {
+  //     initializeWallet();
+  //     //await loadContract();
 
-      window.ethereum.on("chainChanged", () => {
-        window.location.reload();
-      });
+  //     window.ethereum.on("chainChanged", () => {
+  //       window.location.reload();
+  //     });
 
-      window.ethereum.on("disconnect", () => {
-        window.location.reload();
-      });
-    }
-  };
+  //     window.ethereum.on("disconnect", () => {
+  //       window.location.reload();
+  //     });
+  //   }
+  // };
 
   return (
     <>
