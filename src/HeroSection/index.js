@@ -144,7 +144,7 @@ const HeroSection = ({
         return;
       }
       if (qty > 3) {
-        window.alert("Quantity Should Not Be More Than 10!");
+        window.alert("Quantity Should Not Be More Than 3!");
         return;
       }
       if(token !== "undefined"){
