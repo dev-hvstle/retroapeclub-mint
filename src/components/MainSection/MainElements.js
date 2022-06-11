@@ -260,7 +260,7 @@ export const BackgroundImage = styled.img`
 `;
 export const MainContent = styled.div`
   display: flex;
-  padding-top: 8rem;
+  padding-top: 3rem;
   justify-content: start;
   align-items: center;
   flex-direction: column;
