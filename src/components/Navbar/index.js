@@ -2,8 +2,8 @@ import React, { useState, Fragment } from "react";
 
 import { FaBars } from "react-icons/fa";
 import "./NavbarElements.css";
-import opensea from "../../Image/opensea.png";
-import twitter from "../../Image/twitter.png";
+import opensea from "../../Image/Opensea.png";
+import twitter from "../../Image/Twitter.png";
 import discord from "../../Image/discord.png";
 
 import Logo from "../../Image/apesftw.png";
@@ -53,7 +53,11 @@ const Navbar = ({ toggle, initializeWallet, isInitialized, account }) => {
           </MobileIcon>
           <NavMenu></NavMenu>
           <NavBtnContainer>
-            <ImgWrap>
+            <ImgWrap
+              href="https://opensea.io/collection/apes-ftw"
+              rel="noopener"
+              target="_blank"
+            >
               <ImgLogo src={opensea} to="/"></ImgLogo>
             </ImgWrap>
 
