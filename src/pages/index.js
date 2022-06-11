@@ -64,29 +64,27 @@ const Home = () => {
     }
   };
 
-    const loadContract = async() =>{
-      try{
-          const tempToken = new web3.eth.Contract(RetroApeClub.abi, tokenAddress);
-          //const tempTotalSupply = await tempToken.methods.totalSupply().call();
-          console.log(account);
-          //setTotalSupply(tempTotalSupply);
-          setToken(tempToken);
-          //console.log(tempToken);
-
-      }
-      catch(e){
-          console.log('Errror: ', e);
-      }
-  }
+  const loadContract = async () => {
+    try {
+      const tempToken = new web3.eth.Contract(RetroApeClub.abi, tokenAddress);
+      //const tempTotalSupply = await tempToken.methods.totalSupply().call();
+      console.log(account);
+      //setTotalSupply(tempTotalSupply);
+      setToken(tempToken);
+      //console.log(tempToken);
+    } catch (e) {
+      console.log("Errror: ", e);
+    }
+  };
 
   const toggle = () => {
     setIsOpen(!isOpen);
   };
 
-  const playMusic = () => {
-    var audioBG = document.getElementById("audioBg");
-    audioBG.play();
-  };
+  // const playMusic = () => {
+  //   var audioBG = document.getElementById("audioBg");
+  //   audioBG.play();
+  // };
 
   window.onload = () => {
     audioBg.call();

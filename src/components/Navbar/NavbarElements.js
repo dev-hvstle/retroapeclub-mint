@@ -71,7 +71,7 @@ export const ImgLogo = styled.img`
   }
 
   @media screen and (max-width: 460px) {
-    margin-right: 4vw !important;
+    margin-right: 4vw;
     height: 20%;
     width: auto;
   }

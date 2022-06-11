@@ -135,10 +135,10 @@ const HeroSection = ({
   //   }
   // };
 
-  const buy = async() =>{
+  const buy = async () => {
     const qty = document.getElementById("nftQty").value;
 
-    try{
+    try {
       if (qty === "" || qty === 0) {
         window.alert("Quantity Cannot be 0!");
         return;
@@ -147,18 +147,19 @@ const HeroSection = ({
         window.alert("Quantity Should Not Be More Than 3!");
         return;
       }
-      if(token !== "undefined"){
-        token.methods.mint(qty).send({from: account})
-        .catch(function(e){
-          console.log(e);
-          window.alert(e);
-        })
+      if (token !== "undefined") {
+        token.methods
+          .mint(qty)
+          .send({ from: account })
+          .catch(function (e) {
+            console.log(e);
+            window.alert(e);
+          });
       }
-    }
-    catch(e){
+    } catch (e) {
       console.log(e);
     }
-  }
+  };
 
   const [maxMint, setMaxMint] = useState(3);
   return (
@@ -229,7 +230,7 @@ const HeroSection = ({
 
           <GridForm>
             <SupplyCount>
-              <TotalSupply>{remainingSupply} </TotalSupply> UNIQUE NFTS OF {totalSupply}
+              <TotalSupply>{totalSupply} </TotalSupply> OF UNIQUE NFTS
             </SupplyCount>
             <FreeMint>
               <FreeText>FREE</FreeText> MINT

@@ -273,8 +273,8 @@ export const MainContent = styled.div`
   }
 `;
 export const BrandLogo = styled.img`
-  height: 16rem;
-  width: 80rem;
+  height: 13rem;
+  width: 65rem;
   object-fit: cover;
   margin-top: 5rem;
 
@@ -285,10 +285,10 @@ export const BrandLogo = styled.img`
     margin-top: 5rem;
   }
   @media screen and (max-width: 768px) {
-    height: 16rem;
-    width: 35rem;
+    height: 9rem;
+    width: 20rem;
     object-fit: cover;
-    margin-top: 5rem;
+    margin-top: 2rem;
   }
 `;
 export const MainH1 = styled(LinkS)`
@@ -303,5 +303,9 @@ export const MainH1 = styled(LinkS)`
   @font-face {
     font-family: "Kooperativ";
     src: url(${Kooperativ});
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
   }
 `;

@@ -521,7 +521,7 @@ export const MainContent = styled.div`
 `;
 
 export const TaglineImg = styled.img`
-  width: 70%;
+  width: 100%;
   max-height: 200px;
   object-fit: cover;
   /* @media screen and (min-width: 1900px) {
@@ -532,8 +532,10 @@ export const TaglineImg = styled.img`
 
 export const GridContent = styled.div`
   display: grid;
-  width: 80vw;
+  width: 100vw;
   height: 600px;
+  gap: 1rem 0;
+
   grid-template-columns: repeat(2, 1fr);
   @media screen and (max-width: 1024px) {
     grid-template-columns: 1fr;
@@ -573,19 +575,26 @@ export const WeedContainer = styled.div`
   width: 100%;
 `;
 export const Weed = styled.img`
-  overflow: hidden;
   position: absolute;
   height: 100%;
   width: 100%;
-  object-fit: cover;
   top: 0;
+  object-fit: cover;
+
+  @media screen and (max-width: 768px) {
+  }
 `;
 export const Ape = styled.img`
   position: absolute;
   height: 100%;
   width: 100%;
-  object-fit: contain;
   top: 0;
+  object-fit: contain;
+  object-position: center;
+
+  @media screen and (max-width: 768px) {
+    height: 550px;
+  }
 `;
 
 export const GridForm = styled.div`

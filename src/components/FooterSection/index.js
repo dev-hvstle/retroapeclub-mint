@@ -30,8 +30,8 @@ import {
 import retro from "../../Image/retro.png";
 
 import discord from "../../Image/discord.png";
-import twitter from "../../Image/twitter.png";
-import opensea from "../../Image/opensea.png";
+import twitter from "../../Image/Twitter.png";
+import opensea from "../../Image/Opensea.png";
 
 const Footer = () => {
   return (

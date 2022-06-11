@@ -14,8 +14,8 @@ import {
 } from "./SidebarElements";
 
 import "./SidebarElements.css";
-import opensea from "../../Image/opensea.png";
-import twitter from "../../Image/twitter.png";
+import opensea from "../../Image/Opensea.png";
+import twitter from "../../Image/Twitter.png";
 import discord from "../../Image/discord.png";
 import fb from "../../Image/fb.png";
 import Logo from "../../Image/retro.png";
