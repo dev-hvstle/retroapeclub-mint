@@ -44,7 +44,7 @@ import {
   Ape,
   WeedContainer,
 } from "./HeroElements";
-import weedApe from "../Image/astronaut.gif";
+import weedApe from "../Image/apesgif.gif";
 import weed from "../Image/weed.png";
 import bg from "../Image/bg.png";
 import { TextField } from "@material-ui/core";
@@ -229,7 +229,7 @@ const HeroSection = ({
 
           <GridForm>
             <SupplyCount>
-              <TotalSupply>{remainingSupply} </TotalSupply> UNIQUE NFTS OF {totalSupply}
+              <TotalSupply>{remainingSupply} </TotalSupply> UNIQUE APES OF {totalSupply}
             </SupplyCount>
             <FreeMint>
               <FreeText>FREE</FreeText> MINT

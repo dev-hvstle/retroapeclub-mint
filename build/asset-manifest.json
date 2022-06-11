@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.4ff6690e.chunk.css",
-    "main.js": "/static/js/main.5dfcacc1.chunk.js",
-    "main.js.map": "/static/js/main.5dfcacc1.chunk.js.map",
+    "main.js": "/static/js/main.5fdbaefe.chunk.js",
+    "main.js.map": "/static/js/main.5fdbaefe.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.4c96b07d.js",
     "runtime~main.js.map": "/static/js/runtime~main.4c96b07d.js.map",
     "static/js/2.f1d94a4e.chunk.js": "/static/js/2.f1d94a4e.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.8f3bf419.chunk.js": "/static/js/3.8f3bf419.chunk.js",
     "static/js/3.8f3bf419.chunk.js.map": "/static/js/3.8f3bf419.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e86f90733a22eaf357df319ae9b5ab6a.js": "/precache-manifest.e86f90733a22eaf357df319ae9b5ab6a.js",
+    "precache-manifest.719660f03bf8c70bcd9ed602f8ea9328.js": "/precache-manifest.719660f03bf8c70bcd9ed602f8ea9328.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.4ff6690e.chunk.css.map": "/static/css/main.4ff6690e.chunk.css.map",
     "static/media/1stpanel.png": "/static/media/1stpanel.cd3c5e98.png",
@@ -26,7 +26,7 @@
     "static/media/TOMAN651.png": "/static/media/TOMAN651.bad1d56f.png",
     "static/media/Tomorrow-Light.ttf": "/static/media/Tomorrow-Light.a258a91d.ttf",
     "static/media/apesftw.png": "/static/media/apesftw.6e1f71f0.png",
-    "static/media/astronaut.gif": "/static/media/astronaut.4cc04ab8.gif",
+    "static/media/apesgif.gif": "/static/media/apesgif.e966ce06.gif",
     "static/media/batman.ttf": "/static/media/batman.f687ca2c.ttf",
     "static/media/bg.png": "/static/media/bg.82b2a84e.png",
     "static/media/discord.png": "/static/media/discord.0d37ae26.png",
