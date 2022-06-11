@@ -40,8 +40,12 @@ import {
   MintButton,
   MaxContainer,
   ApeContainer,
+  Weed,
+  Ape,
+  WeedContainer,
 } from "./HeroElements";
 import weedApe from "../Image/astronaut.gif";
+import weed from "../Image/weed.png";
 import bg from "../Image/bg.png";
 import { TextField } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core";
@@ -184,15 +188,21 @@ const HeroSection = ({
     // </HeroContainer>
 
     <Container id="hero">
-      <BackgroundImage src={MainBg}></BackgroundImage>
-
       <MainContent>
         <TaglineImg src={ftw}></TaglineImg>
 
         <GridContent>
-          <ApeContainer>
+          {/* <ApeContainer>
             <GridApe src={weedApe}></GridApe>
+          </ApeContainer> */}
+
+          <ApeContainer>
+            {/* <WeedContainer> */}
+            <Weed src={weed}></Weed>
+            {/* </WeedContainer> */}
+            <Ape src={weedApe}></Ape>
           </ApeContainer>
+
           <GridForm>
             <SupplyCount>
               <TotalSupply>{totalSupply} </TotalSupply> UNIQUE NFTS

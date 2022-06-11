@@ -57,7 +57,11 @@ const Navbar = ({ toggle, initializeWallet, isInitialized, account }) => {
               <ImgLogo src={opensea} to="/"></ImgLogo>
             </ImgWrap>
 
-            <ImgWrap href="https://twitter.com/Retro_Ape_Club" rel="noopener">
+            <ImgWrap
+              href="https://twitter.com/ApesFTWOfficial"
+              rel="noopener"
+              target="_blank"
+            >
               <ImgLogo src={twitter}></ImgLogo>
             </ImgWrap>
             {/* 

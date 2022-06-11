@@ -53,7 +53,6 @@ export const NavLogo = styled(LinkR)`
   justify-self: flex-start;
   cursor: pointer;
   font-size: 2vh;
-  height: 10vh;
   display: flex;
   align-items: center;
   margin-left: 0px;
@@ -82,58 +81,32 @@ export const ImgLogoRetro = styled.img`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 3vw;
-  width: auto;
-
-  @media screen and (max-width: 1300px) {
-    height: 3vw;
-    padding-left: 2vh;
-
-    width: auto;
-  }
-
-  @media screen and (max-width: 1024px) {
-    height: 5vw;
-    padding-left: 2vh;
-    width: auto;
-  }
-
-  @media screen and (max-width: 1024) {
-    height: 5vw;
-    padding-left: 2vh;
-    width: auto;
-  }
-
-  @media screen and (max-width: 460px) {
-    display: flex;
-    align-items: center;
-    height: 12vw;
-    width: auto;
-  }
+  max-width: 17rem;
+  max-height: 80px;
 `;
 
-export const RetroLogo = styled.img`
-  height: 10vh;
-  width: auto;
-  margin-right: 1vw;
-  margin-left: -5vw;
+// export const RetroLogo = styled.img`
+//   height: 10vh;
+//   width: auto;
+//   margin-right: 1vw;
+//   margin-left: -5vw;
 
-  @media screen and (max-width: 1334px) {
-    margin-left: 0vw;
-  }
+//   @media screen and (max-width: 1334px) {
+//     margin-left: 0vw;
+//   }
 
-  @media screen and (max-width: 1024px) {
-    height: 10vw;
-    margin-left: 0vw;
-    width: auto;
-  }
+//   @media screen and (max-width: 1024px) {
+//     height: 10vw;
+//     margin-left: 0vw;
+//     width: auto;
+//   }
 
-  @media screen and (max-width: 460px) {
-    margin-right: 4vw !important;
-    height: 8vh;
-    width: auto;
-  }
-`;
+//   @media screen and (max-width: 460px) {
+//     margin-right: 4vw !important;
+//     height: 8vh;
+//     width: auto;
+//   }
+// `;
 
 export const MobileIcon = styled.div`
   display: none;

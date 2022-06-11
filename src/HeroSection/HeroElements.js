@@ -1,7 +1,7 @@
 import styled from "styled-components";
 // import fofbb from "./../fonts/fofbb_ital.otf";
 import Kooperativ from "../fonts/ST-Kooperativ/ST-Kooperativ.ttf";
-
+import weed from "../Image/weed.png";
 // import para from "./../fonts/Tomorrow-Light.ttf";
 
 // export const HeroContainer = styled.div`
@@ -513,8 +513,7 @@ export const BackgroundImage = styled.img`
 
 export const MainContent = styled.div`
   width: 100%;
-  position: absolute;
-  top: 0;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -522,10 +521,9 @@ export const MainContent = styled.div`
 `;
 
 export const TaglineImg = styled.img`
-  width: 80vw;
-  height: 10rem;
+  width: 70%;
+  max-height: 200px;
   object-fit: cover;
-  margin-top: 1rem;
   /* @media screen and (min-width: 1900px) {
     margin: 2rem 0;
     height: 15rem;
@@ -534,35 +532,65 @@ export const TaglineImg = styled.img`
 
 export const GridContent = styled.div`
   display: grid;
-  height: calc(100vh - 80px);
-  width: 100vw;
+  width: 80vw;
+  height: 600px;
   grid-template-columns: repeat(2, 1fr);
-
   @media screen and (max-width: 1024px) {
     grid-template-columns: 1fr;
   }
+
+  /* @media screen and (max-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr;
+  } */
 `;
+// export const ApeContainer = styled.div`
+//   height: 100%;
+//   width: 100%;
+//   display: grid;
+//   place-content: center;
+//   background-image: url(${weed});
+//   background-position: left;
+// `;
+// export const GridApe = styled.img`
+//   justify-self: center;
+//   max-height: 700px;
+//   @media screen and (max-width: 1024px) {
+//     max-width: 500px;
+//   }
+//   @media screen and (max-width: 768px) {
+//     max-width: 400px;
+//   }
+// `;
+
 export const ApeContainer = styled.div`
+  position: relative;
+  height: 600px;
+`;
+
+export const WeedContainer = styled.div`
   height: 100%;
   width: 100%;
-  display: grid;
-  place-content: center;
 `;
-export const GridApe = styled.img`
-  justify-self: center;
-  max-height: 700px;
-  @media screen and (max-width: 1024px) {
-    max-width: 500px;
-  }
-  @media screen and (max-width: 768px) {
-    max-width: 400px;
-  }
+export const Weed = styled.img`
+  overflow: hidden;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  top: 0;
+`;
+export const Ape = styled.img`
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  top: 0;
 `;
 
 export const GridForm = styled.div`
   display: grid;
   place-content: center;
-  padding: 2rem 0;
 `;
 
 export const SupplyCount = styled.h1`

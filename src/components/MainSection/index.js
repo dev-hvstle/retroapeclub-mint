@@ -102,7 +102,7 @@ const MainSection = () => {
       <MainContent>
         <BrandLogo src={apesftw} className="easeload"></BrandLogo>
         <MainH1
-          className="easeloadafter"
+          className="easeloadafter bounce"
           to="hero"
           smooth={true}
           duration={500}

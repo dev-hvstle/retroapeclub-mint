@@ -273,25 +273,28 @@ export const MainContent = styled.div`
   }
 `;
 export const BrandLogo = styled.img`
-  height: 15rem;
-  width: 50rem;
+  height: 16rem;
+  width: 80rem;
   object-fit: cover;
+  margin-top: 5rem;
 
-  @media screen and (max-width: 768px) {
-    height: 10rem;
-    width: 35rem;
+  @media screen and (max-width: 1100px) {
+    height: 16rem;
+    width: 50rem;
+    object-fit: cover;
     margin-top: 5rem;
   }
-  @media screen and (max-width: 640px) {
-    height: 5rem;
-    width: 20rem;
+  @media screen and (max-width: 768px) {
+    height: 16rem;
+    width: 35rem;
+    object-fit: cover;
     margin-top: 5rem;
   }
 `;
 export const MainH1 = styled(LinkS)`
   display: flex;
   justify-content: center;
-  font-size: 2.3rem;
+  font-size: 3rem;
   color: #080849;
   cursor: pointer;
   text-align: center;
