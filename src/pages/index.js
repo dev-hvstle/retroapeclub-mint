@@ -3,7 +3,7 @@ import Web3 from "web3";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import HeroSection from "../HeroSection";
-import RetroApeClub from "../abi/RetroApeClub.json";
+import RetroApeClub from "../abi/ApesFTW.json";
 import InfoSection from "../components/InfoSection";
 import RoadmapSection from "../components/RoadmapSection";
 import TeamSection from "../components/TeamSection";
@@ -23,7 +23,7 @@ const Home = () => {
   const [token, setToken] = useState();
   const [isEligibleForFreeMint, setIsEligibleForFreeMint] = useState(false);
   const web3 = new Web3(window.ethereum);
-  const tokenAddress = "0xE8c7cFe6f941BC88E4866EcAcB837f8AB416AF58";
+  const tokenAddress = "0xF1f04a9DEBC4c244D9f9ee77ECCef31A2c125128";
   const [audioBg] = useSound(bgMusic);
 
   // const {MerkleTree} = require('merkletreejs');
@@ -51,41 +51,33 @@ const Home = () => {
       }
       try {
         const tempToken = new web3.eth.Contract(RetroApeClub.abi, tokenAddress);
-        const tempIsIncludedInFreeList = await tempToken.methods
-          .freeMintList(tempAccount)
-          .call();
-        const tempIsFreeMintClaimed = await tempToken.methods
-          .isFreeMintClaimed(tempAccount)
-          .call();
         const tempRemainingSupply = await tempToken.methods
           .totalSupply()
           .call();
-        if (tempIsIncludedInFreeList && !tempIsFreeMintClaimed) {
-          setIsEligibleForFreeMint(true);
-        }
-        setRemainingSupply(5000 - tempRemainingSupply);
+        setRemainingSupply(6969 - parseInt(tempRemainingSupply));
         setToken(tempToken);
         //console.log(tempToken);
+        loadContract();
       } catch (e) {
         console.log("Errror: ", e);
       }
     }
   };
 
-  //   const loadContract = async() =>{
-  //     try{
-  //         const tempToken = new web3.eth.Contract(RetroApeClub.abi, tokenAddress);
-  //         const tempTotalSupply = await tempToken.methods.totalSupply().call();
-  //         const tempIsIncludedInFreeList = await tempToken.methods.freeMintList(account).call();
-  //         console.log(account);
-  //         setToken(tempToken);
-  //         //console.log(tempToken);
+    const loadContract = async() =>{
+      try{
+          const tempToken = new web3.eth.Contract(RetroApeClub.abi, tokenAddress);
+          //const tempTotalSupply = await tempToken.methods.totalSupply().call();
+          console.log(account);
+          //setTotalSupply(tempTotalSupply);
+          setToken(tempToken);
+          //console.log(tempToken);
 
-  //     }
-  //     catch(e){
-  //         console.log('Errror: ', e);
-  //     }
-  // }
+      }
+      catch(e){
+          console.log('Errror: ', e);
+      }
+  }
 
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -135,6 +127,7 @@ const Home = () => {
         account={account}
         isEligibleForFreeMint={isEligibleForFreeMint}
         totalSupply={totalSupply}
+        remainingSupply={remainingSupply}
       />
       {/* <InfoSection />
       <RoadmapSection /> */}
