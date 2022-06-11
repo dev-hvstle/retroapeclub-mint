@@ -1,4 +1,4 @@
-.btnNavbar{
+.btnNavbar {
   background-color: transparent;
   border: transparent;
   height: 4vh;
@@ -12,34 +12,31 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
-  font-family: 'Tomorrow', sans-serif;
+  font-family: "Tomorrow", sans-serif;
   font-weight: 900;
-
-
 }
 
-.btnNavbar:hover{
+.btnNavbar:hover {
   transition: all 0.2s ease-in-out;
- 
+
   opacity: 0.7;
 }
 
-.about{
+.about {
   color: #c940b4;
   font-weight: 900;
 }
 
-.roadmap{
+.roadmap {
   color: #177cbf;
   font-weight: 900;
 }
 
-.navbar{
+.navbar {
   background-color: transparent;
-
 }
 
-.navbar.colorChange{
+.navbar.colorChange {
   background-color: #0f1923;
 
   transition: all 0.4s ease-in-out;

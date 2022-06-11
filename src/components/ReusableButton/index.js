@@ -1,10 +1,8 @@
-import React from 'react'
-import './ReusableButtonElements.css'
+import React from "react";
+import "./ReusableButtonElements.css";
 
 const ReusableButton = () => {
-    return (
-        <button className="btnMint"></button>
-    )
-}
+  return <button className="btnMint"></button>;
+};
 
-export default ReusableButton
+export default ReusableButton;
