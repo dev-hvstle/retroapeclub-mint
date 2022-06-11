@@ -100,41 +100,65 @@ const HeroSection = ({
   const classes = useStyles();
   const labelClasses = useLabelStyles();
 
-  const buyNft = async () => {
-    if (typeof window.ethereum !== "undefined") {
-      const qty = document.getElementById("nftQty").value;
+  // const buyNft = async () => {
+  //   if (typeof window.ethereum !== "undefined") {
+  //     const qty = document.getElementById("nftQty").value;
 
-      if (isEligibleForFreeMint) {
-        try {
-          token.methods.freeMint().send({ from: account });
-        } catch (e) {
-          console.log("Error: ", e);
-        }
-        return;
-      }
+  //     if (isEligibleForFreeMint) {
+  //       try {
+  //         token.methods.freeMint().send({ from: account });
+  //       } catch (e) {
+  //         console.log("Error: ", e);
+  //       }
+  //       return;
+  //     }
+  //     if (qty === "" || qty === 0) {
+  //       window.alert("Quantity Cannot be 0!");
+  //       return;
+  //     }
+  //     if (qty > 3) {
+  //       window.alert("Quantity Should Not Be More Than 10!");
+  //       return;
+  //     }
+  //     if (token !== "undefined") {
+  //       const qty = document.getElementById("nftQty").value;
+
+  //       try {
+  //         token.methods.mint(qty).send({from: account });
+  //       } catch (e) {
+  //         console.log("Error: ", e);
+  //       }
+  //     } else {
+  //     }
+  //   } else {
+  //     window.alert("Please Install Metamask or use browser that supports Web3");
+  //   }
+  // };
+
+  const buy = async() =>{
+    const qty = document.getElementById("nftQty").value;
+
+    try{
       if (qty === "" || qty === 0) {
         window.alert("Quantity Cannot be 0!");
         return;
       }
-      if (qty > 10) {
+      if (qty > 3) {
         window.alert("Quantity Should Not Be More Than 10!");
         return;
       }
-      if (token !== "undefined") {
-        const qty = document.getElementById("nftQty").value;
-        const amount = String(5 * qty * 10 ** 16);
-
-        try {
-          token.methods.mint(qty).send({ value: amount, from: account });
-        } catch (e) {
-          console.log("Error: ", e);
-        }
-      } else {
+      if(token !== "undefined"){
+        token.methods.mint(qty).send({from: account})
+        .catch(function(e){
+          console.log(e);
+          window.alert(e);
+        })
       }
-    } else {
-      window.alert("Please Install Metamask or use browser that supports Web3");
     }
-  };
+    catch(e){
+      console.log(e);
+    }
+  }
 
   const [maxMint, setMaxMint] = useState(3);
   return (
@@ -205,7 +229,7 @@ const HeroSection = ({
 
           <GridForm>
             <SupplyCount>
-              <TotalSupply>{totalSupply} </TotalSupply> UNIQUE NFTS
+              <TotalSupply>{remainingSupply} </TotalSupply> UNIQUE NFTS OF {totalSupply}
             </SupplyCount>
             <FreeMint>
               <FreeText>FREE</FreeText> MINT
@@ -215,9 +239,9 @@ const HeroSection = ({
               <MaxContainer>
                 (<MaxValue>MAX {maxMint}</MaxValue>)
               </MaxContainer>
-              <MintInput type="number" max={3} min={1} />
+              <MintInput id="nftQty" type="number" max={3} min={1} />
             </MintAmount>
-            <MintButton>MINT</MintButton>
+            <MintButton onClick={buy}>MINT</MintButton>
           </GridForm>
         </GridContent>
       </MainContent>
