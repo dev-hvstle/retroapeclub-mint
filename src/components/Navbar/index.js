@@ -2,8 +2,8 @@ import React, { useState, Fragment } from "react";
 
 import { FaBars } from "react-icons/fa";
 import "./NavbarElements.css";
-import opensea from "../../Image/Opensea.png";
-import twitter from "../../Image/Twitter.png";
+import opensea from "../../Image/opensea.png";
+import twitter from "../../Image/twitter.png";
 import discord from "../../Image/discord.png";
 
 import Logo from "../../Image/apesftw.png";

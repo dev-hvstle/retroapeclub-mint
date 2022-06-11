@@ -230,7 +230,8 @@ const HeroSection = ({
 
           <GridForm>
             <SupplyCount>
-              <TotalSupply>{totalSupply} </TotalSupply> OF UNIQUE NFTS
+              <TotalSupply>{remainingSupply} </TotalSupply> UNIQUE NFTS OF{" "}
+              {totalSupply}
             </SupplyCount>
             <FreeMint>
               <FreeText>FREE</FreeText> MINT
